@@ -40,29 +40,33 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: new Container(
-        padding: const EdgeInsets.all(5.0),
         child: new Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             new Container(
-              padding: const EdgeInsets.only(bottom: 8.0),
               child: new Card(
-                child: new Text(
-                  'Oeschinen Lake Campground',
-                  style: new TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: new Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                    height: 140.0,
+                    ),
+                    new Text('Aarya Stark'),
+                  ],
                 ),
               ),
             ),
             new Container(
-              padding: const EdgeInsets.only(bottom: 8.0),
               child: new Card(
-                child: new Text(
-                  'Oeschinen Lake Campground',
-                  style: new TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: new Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                    height: 140.0,
+                    ),
+                     new Text('Aarya Stark'),
+                  ],
                 ),
               ),
             ),
