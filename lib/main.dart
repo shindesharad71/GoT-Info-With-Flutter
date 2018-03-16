@@ -71,14 +71,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: new Container(
-        padding: const EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(10.0),
         child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             new Container(
-              child: new Text('Example Text', style: new TextStyle(
-                fontSize: 18.0,
-                fontWeight: FontWeight.w700,
-              ),),
+              child: new Text(
+                'Example Text',
+                style: new TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
             new Card(
               child: new Container(
