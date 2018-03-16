@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Layouts'),
+      home: new MyHomePage(title: 'Game of Thrones'),
     );
   }
 }
@@ -35,46 +35,40 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return new Scaffold(
       appBar: new AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: new Text(widget.title),
       ),
       body: new Container(
-        padding: const EdgeInsets.all(10.0),
-        child: new Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+        padding: const EdgeInsets.all(5.0),
+        child: new Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
             new Container(
-              child: new Text(
-                'Example Text',
-                style: new TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w700,
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: new Card(
+                child: new Text(
+                  'Oeschinen Lake Campground',
+                  style: new TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
-            new Card(
-              child: new Container(
-                new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg'),
-                new Text('Aarya Stark')                
+            new Container(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: new Card(
+                child: new Text(
+                  'Oeschinen Lake Campground',
+                  style: new TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
           ],
         ),
       ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
