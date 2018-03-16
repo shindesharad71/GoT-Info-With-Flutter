@@ -80,10 +80,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.w700,
               ),),
             ),
-            new Container(
-              padding: const EdgeInsets.only(bottom: 8.0, left: 5.0, right: 5.0),
-              child: new Card(
-                child: new Text('Text on card'),
+            new Card(
+              child: new Container(
+                padding: const EdgeInsets.all(32.0),
+                child: new Text('Text on the card'),
               ),
             )
           ],
