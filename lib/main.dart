@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             new Container(
-              
+              alignment: Alignment.topLeft,
               child: new Card(
                 child: new Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,9 +60,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             new Container(
+              alignment: Alignment.topLeft,
               child: new Card(
                 child: new Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
                     height: 140.0,
