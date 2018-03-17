@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Image.network(
-                    'https://vignette.wikia.nocookie.net/gameofthrones/images/7/72/House-Stark-heraldry.jpg/revision/latest/scale-to-width-down/480?cb=20140402121259',
+                    'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142',
                   ),
                   new Text('House Stark'),
                 ],
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Image.network(
-                    'https://i.ytimg.com/vi/LfPdmw64w5Q/maxresdefault.jpg',
+                    'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357',
                   ),
                   new Text('House Lannister'),
                 ],
