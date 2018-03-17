@@ -40,39 +40,94 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: new Container(
-        child: new Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            new Container(
-              alignment: Alignment.topLeft,
-              child: new Card(
-                child: new Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
-                    height: 140.0,
-                    ),
-                    new Text('Aarya Stark'),
-                  ],
-                ),
+        child: new GridView.count(
+          crossAxisSpacing: 10.0,
+          crossAxisCount: 2,
+          primary: false,
+          padding: const EdgeInsets.all(10.0),
+          children: <Widget>[
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
               ),
             ),
-            new Container(
-              alignment: Alignment.topLeft,
-              child: new Card(
-                child: new Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    new Image.network('http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
-                    height: 140.0,
-                    ),
-                     new Text('Aarya Stark'),
-                  ],
-                ),
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
+              ),
+            ),
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
+              ),
+            ),
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
+              ),
+            ),
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
+              ),
+            ),
+            new Card(
+              elevation: 5.0,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Image.network(
+                    'http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/arya-stark.jpg',
+                  ),
+                  new Text('Aarya Stark'),
+                ],
               ),
             ),
           ],
