@@ -47,18 +47,25 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(10.0),
           children: <Widget>[
             new Card(
-              elevation: 5.0,
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new Image.network(
-                    'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142',
+                elevation: 5.0,
+                child: new Container(
+                  alignment: Alignment.center,
+                  child: new Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      new Image.network(
+                        'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142',
+                        height: 160.0,
+                        width: 160.0,
+                      ),
+                      new Text('House Stark',
+                        style: new TextStyle(fontSize: 16.0),
+                        textAlign: TextAlign.center,),
+                    ],
                   ),
-                  new Text('House Stark'),
-                ],
-              ),
+                )
             ),
             new Card(
               elevation: 5.0,
