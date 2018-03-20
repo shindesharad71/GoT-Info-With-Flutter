@@ -7,23 +7,28 @@ class HouseList extends StatelessWidget {
     Card myCard(String houseName, String houseImageUrl) {
       return new Card(
           elevation: 5.0,
-          child: new Container(
-            alignment: Alignment.center,
-            child: new Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                new Image.network(
-                  houseImageUrl,
-                  height: 160.0,
-                  width: 160.0,
+          child: new InkWell(
+              child: new Container(
+                alignment: Alignment.center,
+                child: new Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    new Image.network(
+                      houseImageUrl,
+                      height: 160.0,
+                      width: 160.0,
+                    ),
+                    new Text(houseName,
+                      style: new TextStyle(fontSize: 16.0),
+                      textAlign: TextAlign.center,),
+                  ],
                 ),
-                new Text(houseName,
-                  style: new TextStyle(fontSize: 16.0),
-                  textAlign: TextAlign.center,),
-              ],
-            ),
+              ),
+            onTap: (){
+                print(houseName);
+            },
           )
       );
     }
