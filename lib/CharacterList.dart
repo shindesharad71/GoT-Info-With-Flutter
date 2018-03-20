@@ -39,6 +39,14 @@ class CharacterList extends StatelessWidget {
           ));
     }
 
+
+/*****************************
+
+TODO: Replace House LIst With Characters and Arrange the layout.
+
+********************************/
+
+
     return new Flexible(
       child: new Container(
           child: new GridView.count(
