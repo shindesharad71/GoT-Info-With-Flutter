@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:layouts/SingleHousePage.dart' show SingleHousePage;
 
-class HouseList extends StatelessWidget {
+class CharacterList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    Card myCard(String houseName, String houseImageUrl) {
+    Card myCard(String characterName, String characterImageUrl) {
       return new Card(
           elevation: 5.0,
           child: new InkWell(
@@ -17,12 +17,12 @@ class HouseList extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Image.network(
-                    houseImageUrl,
+                    characterImageUrl,
                     height: 160.0,
                     width: 160.0,
                   ),
                   new Text(
-                    houseName,
+                    characterName,
                     style: new TextStyle(fontSize: 16.0),
                     textAlign: TextAlign.center,
                   ),
@@ -33,7 +33,7 @@ class HouseList extends StatelessWidget {
               Navigator.of(context).push(
                     new MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            new SingleHousePage(houseName)),
+                            new SingleHousePage(characterName)),
                   );
             },
           ));
