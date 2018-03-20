@@ -1,4 +1,4 @@
-# layouts
+# GoT Information App With Flutter (Curruntly in Progrss)
 
 A new Flutter project.
 
