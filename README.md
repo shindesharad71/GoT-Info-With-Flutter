@@ -6,3 +6,8 @@ A new Flutter project.
 
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
+
+
+### Demo - First Page
+
+![demo](https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/demo.png?raw=true)
