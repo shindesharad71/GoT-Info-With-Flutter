@@ -26,13 +26,18 @@ class HouseList extends StatelessWidget {
                 children: <Widget>[
                   new Image.network(
                     houseImageUrl,
-                    height: 160.0,
-                    width: 160.0,
+                    height: itemHeight - 120,
+                    width: itemWidth,
                   ),
-                  new Text(
-                    houseName,
-                    style: new TextStyle(fontSize: 16.0),
-                    textAlign: TextAlign.center,
+                  new Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: new Center(
+                      child: new Text(
+                        houseName,
+                        style: new TextStyle(fontSize: 16.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
                 ],
               ),
