@@ -8,8 +8,8 @@ class Colors {
   static const Color appBarTitle = const Color(0xFFFFFFFF);
   static const Color appBarIconColor = const Color(0xFFFFFFFF);
   static const Color appBarDetailBackground = const Color(0x00FFFFFF);
-  static const Color appBarGradientStart = const Color(0xFF3383FC);
-  static const Color appBarGradientEnd = const Color(0xFF00C6FF);
+  static const Color appBarGradientStart = const Color(0xFFe6dada);
+  static const Color appBarGradientEnd = const Color(0xFF274046);
 
   //static const Color planetCard = const Color(0xFF434273);
   static const Color planetCard = const Color(0xFF8685E5);
