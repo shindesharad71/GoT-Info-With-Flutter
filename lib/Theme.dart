@@ -34,14 +34,14 @@ class TextStyles {
 
   static const TextStyle appBarTitle = const TextStyle(
     color: Colors.appBarTitle,
-    fontFamily: 'Poppins',
+    fontFamily: 'Ubuntu',
     fontWeight: FontWeight.w600,
     fontSize: 36.0
   );
 
   static const TextStyle planetTitle = const TextStyle(
     color: Colors.planetTitle,
-    fontFamily: 'Poppins',
+    fontFamily: 'Ubuntu',
     fontWeight: FontWeight.w600,
     fontSize: 24.0
   );

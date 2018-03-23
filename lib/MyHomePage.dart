@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   } */
+
   Card myCard(String houseName, String houseImageUrl) {
     return new Card(
         elevation: 5.0,
