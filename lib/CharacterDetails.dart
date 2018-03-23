@@ -32,6 +32,8 @@ class CharDetails extends StatelessWidget {
                 'Ned Stark (Sean Bean)',
                 style: new TextStyle(
                   fontSize: 28.0,
+                  fontFamily: 'Ubuntu',
+                  fontWeight: FontWeight.w600,
                   color: Colors.black87,
                 ),
               ),
