@@ -13,26 +13,6 @@ class CharDetails extends StatelessWidget {
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width;
 
-    /* return new Container(
-      child: new Column(
-        children: <Widget>[
-          new Image.network('https://1v1d1e1lmiki1lgcvx32p49h8fe-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/ned-stark-game-of-thrones-740x385.jpg',
-          height: 270.0,
-          width: itemWidth,
-          ),
-          new Text('Ned Stark', style: new TextStyle(
-            fontSize: 28.0,
-            color: Colors.white70,
-          ),
-          textAlign: TextAlign.left,
-          ),
-          new Column(
-
-          ),
-        ],
-      ),
-    ); */
-
     return new Scaffold(
       body: new Container(
         child: new Column(
