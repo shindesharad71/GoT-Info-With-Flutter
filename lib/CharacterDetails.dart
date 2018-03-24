@@ -33,6 +33,7 @@ class CharDetails extends StatelessWidget {
                 style: new TextStyle(
                   fontSize: 28.0,
                   color: Colors.black87,
+                  fontWeight: FontWeight.w600
                 ),
               ),
             ),
