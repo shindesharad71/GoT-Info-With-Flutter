@@ -4,7 +4,6 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class CharDetails extends StatelessWidget {
-
   final String _characterName, _houseName;
 
   CharDetails(this._characterName, this._houseName);
@@ -14,11 +13,8 @@ class CharDetails extends StatelessWidget {
     // TODO: implement build
     return new Scaffold(
         body: new Column(
-          children: <Widget>[
-            new CharacterDetails(_characterName, _houseName)
-          ],
-        )
-    );
+      children: <Widget>[new CharacterDetails(_characterName, _houseName)],
+    ));
   }
 }
 
@@ -32,7 +28,6 @@ class CharacterDetails extends StatefulWidget {
     // TODO: implement createState
     return new CharacterDetailsPageState(_characterName, _houseName);
   }
-
 }
 
 class CharacterDetailsPageState extends State<CharacterDetails> {
@@ -60,12 +55,14 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
   @override
   Widget build(BuildContext context) {
     if (data == null) {
-//      TODO : Loading :)
-      return new Text("Shit");
+      return new Row(
+          children: [
+              new CircularProgressIndicator(),
+              new Text("Loading..."),
+          ],
+        );
     } else {
-      var size = MediaQuery
-          .of(context)
-          .size;
+      var size = MediaQuery.of(context).size;
 
       /*24 is for notification bar on Android*/
       final double itemHeight = (size.height - kToolbarHeight - 24) / 2;

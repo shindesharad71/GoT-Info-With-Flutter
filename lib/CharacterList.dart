@@ -16,12 +16,11 @@ class CharacterList extends StatelessWidget {
     return new Scaffold(
 //        appBar: new AppBar(title: new Text(_houseName),),
         body: new Column(
-          children: <Widget>[
-            new GradientAppBar(_houseName),
-            new CharacterListPage(_houseName)
-          ],
-        )
-    );
+      children: <Widget>[
+        new GradientAppBar(_houseName),
+        new CharacterListPage(_houseName)
+      ],
+    ));
   }
 }
 
@@ -33,7 +32,6 @@ class CharacterListPage extends StatefulWidget {
     // TODO: implement createState
     return new CharacterListPageState(_houseName);
   }
-
 }
 
 class CharacterListPageState extends State<CharacterListPage> {
@@ -43,7 +41,10 @@ class CharacterListPageState extends State<CharacterListPage> {
 
   Future<String> getData() async {
     var response = await http.get(
-      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/"+_houseName+"/characters" +".json"),
+      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/" +
+          _houseName +
+          "/characters" +
+          ".json"),
     );
 
     this.setState(() {
@@ -55,9 +56,7 @@ class CharacterListPageState extends State<CharacterListPage> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery
-        .of(context)
-        .size;
+    var size = MediaQuery.of(context).size;
 
     // 24 is for notification bar on Android
 
@@ -95,35 +94,30 @@ class CharacterListPageState extends State<CharacterListPage> {
             ),
             onTap: () {
               Navigator.of(context).push(
-                new MaterialPageRoute(
-                    builder: (BuildContext context) =>
-                    new CharDetails(charName,_houseName)),
-              );
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            new CharDetails(charName, _houseName)),
+                  );
             },
-          )
-      );
+          ));
     }
 
     return new Flexible(
         child: new Column(
-          children: <Widget>[
-            new Flexible(
-                child: new Container(
-                    child: new GridView.builder(
-                        itemCount: data == null ? 0 : data.length,
-                        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2),
-                        itemBuilder: (BuildContext context, int index) {
-                          var housename = data.keys.toList()[index].toString();
-                          return myCard(
-                              housename, data[housename]['image'].toString());
-                        }
-                    )
-                )
-            ),
-          ],
-        )
-    );
+      children: <Widget>[
+        new Flexible(
+            child: new Container(
+                child: new GridView.builder(
+                    itemCount: data == null ? 0 : data.length,
+                    gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2),
+                    itemBuilder: (BuildContext context, int index) {
+                      var housename = data.keys.toList()[index].toString();
+                      return myCard(
+                          housename, data[housename]['image'].toString());
+                    }))),
+      ],
+    ));
   }
 
   @override
