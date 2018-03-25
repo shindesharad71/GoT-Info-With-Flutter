@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
+import 'package:layouts/GradientAppBar.dart';
 
 class CharacterList extends StatefulWidget {
   final String _houseName;
@@ -23,7 +24,7 @@ class CharacterListState extends State<CharacterList> {
     this.setState(() {
       data = JSON.decode(response.body);
     });
-  //print('abcd- $data');
+  print('abcd- $data');
     return "Success!";
   }
 
@@ -75,16 +76,23 @@ class CharacterListState extends State<CharacterList> {
           ));
     }
 
-    return new Flexible(
-        child: new Container(
-            child: new GridView.builder(
-                itemCount: data == null ? 0 : data.length,
-                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemBuilder: (BuildContext context, int index) {
-                  var housename = data.keys.toList()[index].toString();
-                  return myCard(housename, data[housename]['image'].toString());
-                })));
+    return new Scaffold(
+        body: new Column(
+      children: <Widget>[
+        new GradientAppBar('House Name Here'),
+        new Flexible(
+            child: new Container(
+                child: new GridView.builder(
+                    itemCount: data == null ? 0 : data.length,
+                    gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2),
+                    itemBuilder: (BuildContext context, int index) {
+                      var housename = data.keys.toList()[index].toString();
+                      return myCard(housename, data[housename]['image'].toString());
+                    }))),
+      ],
+    )
+    );
   }
 
   @override
