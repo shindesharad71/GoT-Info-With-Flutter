@@ -64,7 +64,7 @@ class CharacterListPageState extends State<CharacterListPage> {
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width / 2;
 
-    Card myCard(String houseName, String houseImageUrl) {
+    Card myCard(String charName, String charImageUrl) {
       return new Card(
           elevation: 5.0,
           child: new InkWell(
@@ -76,7 +76,7 @@ class CharacterListPageState extends State<CharacterListPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Image.network(
-                    houseImageUrl,
+                    charImageUrl,
                     height: 180.0,
                     width: itemWidth,
                   ),
@@ -84,7 +84,7 @@ class CharacterListPageState extends State<CharacterListPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: new Center(
                       child: new Text(
-                        houseName,
+                        charName,
                         style: new TextStyle(fontSize: 16.0),
                         textAlign: TextAlign.center,
                       ),
@@ -94,11 +94,11 @@ class CharacterListPageState extends State<CharacterListPage> {
               ),
             ),
             onTap: () {
-//              Navigator.of(context).push(
-//                new MaterialPageRoute(
-//                    builder: (BuildContext context) =>
-//                    new CharDetails(houseName)),
-//              );
+              Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                    new CharDetails(charName,_houseName)),
+              );
             },
           )
       );
