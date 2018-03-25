@@ -1,18 +1,38 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
 
-class SingleHousePage extends StatelessWidget {
+class CharacterList extends StatefulWidget {
   final String _houseName;
 
-  SingleHousePage(this._houseName);
+  CharacterList(this._houseName);
+
+  CharacterListState createState() => new CharacterListState();
+}
+
+class CharacterListState extends State<CharacterList> {
+  Map data;
+
+  Future<String> getData() async {
+    var response = await http.get(
+      Uri.encodeFull("https://got-flutter.firebaseio.com/houses.json"),
+    );
+
+    this.setState(() {
+      data = JSON.decode(response.body);
+    });
+  //print('abcd- $data');
+    return "Success!";
+  }
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery
-        .of(context)
-        .size;
+    var size = MediaQuery.of(context).size;
 
-    /*24 is for notification bar on Android*/
+    // 24 is for notification bar on Android
+
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width / 2;
 
@@ -29,7 +49,7 @@ class SingleHousePage extends StatelessWidget {
                 children: <Widget>[
                   new Image.network(
                     houseImageUrl,
-                    height: itemHeight - 120,
+                    height: 180.0,
                     width: itemWidth,
                   ),
                   new Padding(
@@ -47,38 +67,36 @@ class SingleHousePage extends StatelessWidget {
             ),
             onTap: () {
               Navigator.of(context).push(
-                new MaterialPageRoute(
-                    builder: (BuildContext context) =>
-                    new CharDetails(houseName)),
-              );
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            new CharDetails(houseName)),
+                  );
             },
-          )
-      );
+          ));
     }
 
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(_houseName),
-        backgroundColor: Colors.black,
-      ),
-      body: new Container(
-          child: new GridView.count(
-              crossAxisSpacing: 10.0,
-              crossAxisCount: 2,
-              primary: false,
-              shrinkWrap: true,
-              controller: new ScrollController(keepScrollOffset: false),
-              scrollDirection: Axis.vertical,
-              childAspectRatio: (itemWidth / 250.0),
-              padding: const EdgeInsets.all(10.0),
+    return new Flexible(
+        child: new Container(
+            child: new GridView.builder(
+                itemCount: data == null ? 0 : data.length,
+                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                itemBuilder: (BuildContext context, int index) {
+                  var housename = data.keys.toList()[index].toString();
+                  return myCard(housename, data[housename]['image'].toString());
+                })));
+  }
 
-              children: <Widget>[
-                myCard("char1",
-                    'null'),
-              ]
-          )
-      ),
-    );
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.getData();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 }
-

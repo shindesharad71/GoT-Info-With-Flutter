@@ -31,10 +31,9 @@ class CharDetails extends StatelessWidget {
               child: new Text(
                 _characterName,
                 style: new TextStyle(
-                  fontSize: 28.0,
-                  color: Colors.black87,
-                  fontWeight: FontWeight.w600
-                ),
+                    fontSize: 28.0,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w600),
               ),
             ),
             new Padding(

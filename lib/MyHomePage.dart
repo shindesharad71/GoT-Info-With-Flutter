@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:layouts/GradientAppBar.dart';
 import 'package:layouts/HouseList.dart';
 
-
-class MyHomePage extends StatelessWidget{
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -11,7 +10,6 @@ class MyHomePage extends StatelessWidget{
       body: new HomePageBody(),
     );
   }
-
 }
 
 class HomePageBody extends StatefulWidget {
@@ -31,12 +29,6 @@ class _HomePageBodyState extends State<HomePageBody> {
     );
   }
 }
-
-
-
-
-
-
 
 /*class MyHomePage extends StatefulWidget {
   @override
