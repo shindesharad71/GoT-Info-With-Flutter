@@ -29,7 +29,7 @@ class CharDetails extends StatelessWidget {
             new Padding(
               padding: const EdgeInsets.all(12.0),
               child: new Text(
-                'Ned Stark (Sean Bean)',
+                _characterName,
                 style: new TextStyle(
                   fontSize: 28.0,
                   color: Colors.black87,

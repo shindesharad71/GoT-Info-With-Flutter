@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
+
 class SingleHousePage extends StatelessWidget {
   final String _houseName;
 
@@ -51,7 +52,8 @@ class SingleHousePage extends StatelessWidget {
                     new CharDetails(houseName)),
               );
             },
-          ));
+          )
+      );
     }
 
     return new Scaffold(
@@ -72,28 +74,11 @@ class SingleHousePage extends StatelessWidget {
 
               children: <Widget>[
                 myCard("char1",
-                    'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142'),
-                myCard("char2",
-                    'https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153'),
-                myCard(
-                  "char3",
-                  'https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648',
-                ),
-                myCard(
-                  "char4",
-                  'http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png',
-                ),
-                myCard(
-                  "char5",
-                  'https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320',
-                ),
-                myCard(
-                  "char6",
-                  'https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357',
-                ),
+                    'null'),
               ]
           )
       ),
     );
   }
 }
+
