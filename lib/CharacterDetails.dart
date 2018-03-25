@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class CharDetails extends StatelessWidget {
@@ -7,14 +10,58 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+        body: new Column(
+          children: <Widget>[
+            new CharacterDetails(_characterName)
+          ],
+        )
+    );
+  }
+}
+
+class CharacterDetails extends StatefulWidget {
+  final String _characterName;
+  CharacterDetails(this._characterName);
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return new CharacterDetailsPageState(_characterName);
+  }
+
+}
+
+class CharacterDetailsPageState extends State<CharacterDetails> {
+  final String _characterName;
+
+  CharacterDetailsPageState(this._characterName);
+
+  Map data;
+
+  Future<String> getData() async {
+    var response = await http.get(
+      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/characters/"+_characterName+".json"),
+    );
+
+    this.setState(() {
+      data = JSON.decode(response.body);
+    });
+
+    print('abcd - $data');
+    return "Success!";
+  }
+
+  @override
+  Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
 
     /*24 is for notification bar on Android*/
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width;
 
-    return new Scaffold(
-      body: new Container(
+    return new Container(
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -48,7 +95,20 @@ class CharDetails extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
+  }
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.getData();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 }

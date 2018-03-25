@@ -94,11 +94,11 @@ class CharacterListPageState extends State<CharacterListPage> {
               ),
             ),
             onTap: () {
-//              Navigator.of(context).push(
-//                new MaterialPageRoute(
-//                    builder: (BuildContext context) =>
-//                    new CharDetails(houseName)),
-//              );
+              Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                    new CharDetails(houseName)),
+              );
             },
           )
       );
