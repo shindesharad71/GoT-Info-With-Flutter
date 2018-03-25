@@ -5,32 +5,59 @@ import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
 import 'package:layouts/GradientAppBar.dart';
 
-class CharacterList extends StatefulWidget {
+class CharacterList extends StatelessWidget {
   final String _houseName;
 
   CharacterList(this._houseName);
 
-  CharacterListState createState() => new CharacterListState();
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+//        appBar: new AppBar(title: new Text(_houseName),),
+        body: new Column(
+          children: <Widget>[
+            new GradientAppBar(_houseName),
+            new CharacterListPage(_houseName)
+          ],
+        )
+    );
+  }
 }
 
-class CharacterListState extends State<CharacterList> {
+class CharacterListPage extends StatefulWidget {
+  final String _houseName;
+  CharacterListPage(this._houseName);
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return new CharacterListPageState(_houseName);
+  }
+
+}
+
+class CharacterListPageState extends State<CharacterListPage> {
+  final String _houseName;
+  CharacterListPageState(this._houseName);
   Map data;
 
   Future<String> getData() async {
     var response = await http.get(
-      Uri.encodeFull("https://got-flutter.firebaseio.com/houses.json"),
+      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/"+_houseName+"/characters" +".json"),
     );
 
     this.setState(() {
       data = JSON.decode(response.body);
     });
-  print('abcd- $data');
+    print(data);
     return "Success!";
   }
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size = MediaQuery
+        .of(context)
+        .size;
 
     // 24 is for notification bar on Android
 
@@ -67,31 +94,35 @@ class CharacterListState extends State<CharacterList> {
               ),
             ),
             onTap: () {
-              Navigator.of(context).push(
-                    new MaterialPageRoute(
-                        builder: (BuildContext context) =>
-                            new CharDetails(houseName)),
-                  );
+//              Navigator.of(context).push(
+//                new MaterialPageRoute(
+//                    builder: (BuildContext context) =>
+//                    new CharDetails(houseName)),
+//              );
             },
-          ));
+          )
+      );
     }
 
-    return new Scaffold(
-        body: new Column(
-      children: <Widget>[
-        new GradientAppBar('House Name Here'),
-        new Flexible(
-            child: new Container(
-                child: new GridView.builder(
-                    itemCount: data == null ? 0 : data.length,
-                    gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2),
-                    itemBuilder: (BuildContext context, int index) {
-                      var housename = data.keys.toList()[index].toString();
-                      return myCard(housename, data[housename]['image'].toString());
-                    }))),
-      ],
-    )
+    return new Flexible(
+        child: new Column(
+          children: <Widget>[
+            new Flexible(
+                child: new Container(
+                    child: new GridView.builder(
+                        itemCount: data == null ? 0 : data.length,
+                        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2),
+                        itemBuilder: (BuildContext context, int index) {
+                          var housename = data.keys.toList()[index].toString();
+                          return myCard(
+                              housename, data[housename]['image'].toString());
+                        }
+                    )
+                )
+            ),
+          ],
+        )
     );
   }
 
