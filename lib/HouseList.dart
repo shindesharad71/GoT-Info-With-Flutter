@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'package:layouts/CharacterList.dart' show SingleHousePage;
+import 'package:layouts/CharacterList.dart' show CharacterList;
 
 class HouseList extends StatefulWidget {
   @override
@@ -70,7 +70,7 @@ class HouseListState extends State<HouseList> {
               Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) =>
-                    new SingleHousePage(houseName)),
+                    new CharacterList(houseName)),
               );
             },
           )
