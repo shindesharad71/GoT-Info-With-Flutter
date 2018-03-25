@@ -44,14 +44,14 @@ class HouseListState extends State<HouseList> {
             child: new Container(
               alignment: Alignment.center,
               child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Image.network(
                     houseImageUrl,
                     height: 180.0,
-                    width: itemWidth,
+                    width: 180.0,
                   ),
                   new Padding(
                     padding: const EdgeInsets.all(8.0),
