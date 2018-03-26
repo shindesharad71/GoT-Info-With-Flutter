@@ -91,7 +91,7 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
             new Padding(
               padding: const EdgeInsets.all(12.0),
               child: new Text(
-                data["real_name"],
+                _characterName+' ('+data["real_name"]+')',
                 style: new TextStyle(
                     fontSize: 28.0,
                     color: Colors.black87,
