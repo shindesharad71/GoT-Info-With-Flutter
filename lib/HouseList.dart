@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterList.dart' show CharacterList;
+import 'package:layouts/LoadingPage.dart';
 
 class HouseList extends StatefulWidget {
   @override
@@ -26,7 +27,9 @@ class HouseListState extends State<HouseList> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size = MediaQuery
+        .of(context)
+        .size;
 
     // 24 is for notification bar on Android
 
@@ -64,24 +67,28 @@ class HouseListState extends State<HouseList> {
             ),
             onTap: () {
               Navigator.of(context).push(
-                    new MaterialPageRoute(
-                        builder: (BuildContext context) =>
-                            new CharacterList(houseName)),
-                  );
+                new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                    new CharacterList(houseName)),
+              );
             },
           ));
     }
-
-    return new Flexible(
-        child: new Container(
-            child: new GridView.builder(
-                itemCount: data == null ? 0 : data.length,
-                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemBuilder: (BuildContext context, int index) {
-                  var housename = data.keys.toList()[index].toString();
-                  return myCard(housename, data[housename]['image'].toString());
-                })));
+    if (data == null) {
+      return new LoadingPage();
+    } else {
+      return new Flexible(
+          child: new Container(
+              child: new GridView.builder(
+                  itemCount: data == null ? 0 : data.length,
+                  gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  itemBuilder: (BuildContext context, int index) {
+                    var housename = data.keys.toList()[index].toString();
+                    return myCard(
+                        housename, data[housename]['image'].toString());
+                  })));
+    }
   }
 
   @override
