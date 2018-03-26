@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
 import 'package:layouts/GradientAppBar.dart';
+import 'package:layouts/LoadingPage.dart';
 
 class CharacterList extends StatelessWidget {
   final String _houseName;
@@ -20,30 +21,35 @@ class CharacterList extends StatelessWidget {
             new GradientAppBar(_houseName),
             new CharacterListPage(_houseName)
           ],
-        )
-    );
+        ));
   }
 }
 
 class CharacterListPage extends StatefulWidget {
   final String _houseName;
+
   CharacterListPage(this._houseName);
+
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return new CharacterListPageState(_houseName);
   }
-
 }
 
 class CharacterListPageState extends State<CharacterListPage> {
   final String _houseName;
+
   CharacterListPageState(this._houseName);
+
   Map data;
 
   Future<String> getData() async {
     var response = await http.get(
-      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/"+_houseName+"/characters" +".json"),
+      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/" +
+          _houseName +
+          "/characters" +
+          ".json"),
     );
 
     this.setState(() {
@@ -97,33 +103,33 @@ class CharacterListPageState extends State<CharacterListPage> {
               Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) =>
-                    new CharDetails(charName,_houseName)),
+                    new CharDetails(charName, _houseName)),
               );
             },
+          ));
+    }
+    if (data == null) {
+      return new LoadingPage();
+    } else {
+      return new Flexible(
+          child: new Column(
+            children: <Widget>[
+              new Flexible(
+                  child: new Container(
+                      child: new GridView.builder(
+                          itemCount: data == null ? 0 : data.length,
+                          gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2),
+                          itemBuilder: (BuildContext context, int index) {
+                            var housename = data.keys.toList()[index]
+                                .toString();
+                            return myCard(
+                                housename, data[housename]['image'].toString());
+                          }))),
+            ],
           )
       );
     }
-
-    return new Flexible(
-        child: new Column(
-          children: <Widget>[
-            new Flexible(
-                child: new Container(
-                    child: new GridView.builder(
-                        itemCount: data == null ? 0 : data.length,
-                        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2),
-                        itemBuilder: (BuildContext context, int index) {
-                          var housename = data.keys.toList()[index].toString();
-                          return myCard(
-                              housename, data[housename]['image'].toString());
-                        }
-                    )
-                )
-            ),
-          ],
-        )
-    );
   }
 
   @override

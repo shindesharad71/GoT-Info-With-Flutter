@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterList.dart' show CharacterList;
+import 'package:layouts/LoadingPage.dart';
 
 class HouseList extends StatefulWidget {
   @override
@@ -17,11 +18,9 @@ class HouseListState extends State<HouseList> {
       Uri.encodeFull("https://got-flutter.firebaseio.com/houses.json"),
     );
 
-    this.setState(
-            () {
-          data = JSON.decode(response.body);
-        }
-    );
+    this.setState(() {
+      data = JSON.decode(response.body);
+    });
 //    print(data);
     return "Success!";
   }
@@ -73,23 +72,23 @@ class HouseListState extends State<HouseList> {
                     new CharacterList(houseName)),
               );
             },
-          )
-      );
+          ));
     }
-
-    return new Flexible(
-        child: new Container(
-            child: new GridView.builder(
-                itemCount: data == null ? 0 : data.length,
-                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemBuilder: (BuildContext context, int index) {
-                  var housename = data.keys.toList()[index].toString();
-                  return myCard(housename, data[housename]['image'].toString());
-                }
-            )
-        )
-    );
+    if (data == null) {
+      return new LoadingPage();
+    } else {
+      return new Flexible(
+          child: new Container(
+              child: new GridView.builder(
+                  itemCount: data == null ? 0 : data.length,
+                  gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  itemBuilder: (BuildContext context, int index) {
+                    var housename = data.keys.toList()[index].toString();
+                    return myCard(
+                        housename, data[housename]['image'].toString());
+                  })));
+    }
   }
 
   @override
