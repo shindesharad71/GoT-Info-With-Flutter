@@ -1,0 +1,63 @@
+{
+  "houses": {
+    "House Arryan": {
+      "image":
+        "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153"
+    },
+    "House Baratheon": {
+      "image":
+        "http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png"
+    },
+    "House Lannister": {
+      "characters": {
+        "Cersei Lannister": {
+          "dob": "09/09/09",
+          "image":
+            "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/Queen_Cersei_Main_The_winds_of_Winter.jpg/revision/latest/scale-to-width-down/366?cb=20161215024728",
+          "real_name": "Lena Headey"
+        },
+        "Jaime Lannister": {
+          "dob": "11/11/11",
+          "image":
+            "https://media.immediate.co.uk/volatile/sites/3/2017/08/Jaime-Lannister.jpg?quality=90&resize=620,413",
+          "real_name": "Nikolaj Coster-Waldau"
+        },
+        "Tywin Lannister": {
+          "dob": "11/11/11",
+          "image":
+            "https://vignette.wikia.nocookie.net/gameofthrones/images/7/71/Tywin_Lannister_4x08.jpg/revision/latest/scale-to-width-down/348?cb=20170830015346",
+          "real_name": "Charles Dance"
+        },
+        "Tyrion Lannister": {
+          "dob": "11/11/11",
+          "image": "http://www1.pictures.livingly.com/mp/Advag-ZuCdAl.jpg",
+          "real_name": "Peter Dinklage"
+        }
+      },
+      "house_deatils":
+        "House Lannister is one of the Great Houses of the Seven Kingdoms and the principal house of the Westerlands. Its seat is at Casterly Rock. Its coat of arms displays a golden lion rampant on a crimson field, and its words are Hear Me Roar! More famous than its official motto is the House's unofficial one: A Lannister always pays his debts. Bastards born in The Westerlands are given the surname Hill. The Lannisters ruled as Kings of the Rock until House Targaryen invaded Westeros. They are the richest family in the Seven Kingdoms because of the gold mines located in their lands.",
+      "image":
+        "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
+    },
+    "House Stark": {
+      "characters": {
+        "ned": {
+          "dob": "07/07/07",
+          "real_name": "ja"
+        }
+      },
+      "house_details":
+        "House Stark is one of the Great Houses of the Seven Kingdoms and the principal house of the North. Its seat is at Winterfell, one of the oldest castles in the Seven Kingdoms. Its coat of arms displays a grey direwolf running on a white field, and its words are Winter is Coming. House Stark had ruled as the Kings in the North for thousands of years until House Targaryen conquered Westeros, whereafter the Starks are the Lords of Winterfell and Wardens of the North. For prizing honor and devotion to duty, House Stark is the closest of the noble houses to heroism.Over the course of the novels, the Starks are scattered by the War of the Five Kings, and the fate of the House remains uncertain, as most characters believe that all the legitimate Stark sons are dead.",
+      "image":
+        "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"
+    },
+    "House Targaryen": {
+      "image":
+        "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320"
+    },
+    "House Tully": {
+      "image":
+        "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648"
+    }
+  }
+}
