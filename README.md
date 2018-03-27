@@ -1,6 +1,6 @@
 # GoT Information App With Flutter (Curruntly in Progrss)
 
-A new Flutter project.
+A new Flutter project. A basic informative app for the HBO Series Game of Thrones.
 
 ## Getting Started
 
