@@ -47,10 +47,12 @@ class HouseListState extends State<HouseList> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  new Image.network(
-                    houseImageUrl,
-                    height: 180.0,
-                    width: 180.0,
+                  new Padding(
+                    padding:const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                    child: new Image.network(
+                      houseImageUrl,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   new Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -82,12 +84,17 @@ class HouseListState extends State<HouseList> {
               child: new GridView.builder(
                   itemCount: data == null ? 0 : data.length,
                   gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
+                      crossAxisCount: 2,
+                      childAspectRatio: (4 / 5.5)
+                  ),
                   itemBuilder: (BuildContext context, int index) {
                     var housename = data.keys.toList()[index].toString();
                     return myCard(
                         housename, data[housename]['image'].toString());
-                  })));
+                  }
+              )
+          )
+      );
     }
   }
 
