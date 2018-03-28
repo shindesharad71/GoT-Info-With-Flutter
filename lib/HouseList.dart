@@ -38,6 +38,7 @@ class HouseListState extends State<HouseList> {
 
     Card myCard(String houseName, String houseImageUrl) {
       return new Card(
+//        TODO- USE OF STACKED widget
           elevation: 5.0,
           child: new InkWell(
             child: new Container(
@@ -87,7 +88,7 @@ class HouseListState extends State<HouseList> {
                   itemCount: data == null ? 0 : data.length,
                   gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: (1 / 1)
+                      childAspectRatio: (1 / 1.2)
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     var housename = data.keys.toList()[index].toString();
