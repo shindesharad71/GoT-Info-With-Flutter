@@ -77,14 +77,18 @@ class CharacterListPageState extends State<CharacterListPage> {
             child: new Container(
               alignment: Alignment.center,
               child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  new Image.network(
-                    charImageUrl,
-                    height: 180.0,
-                    width: itemWidth,
+                  new Padding(
+                    padding:const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                    child: new Image.network(
+                      charImageUrl,
+                      fit: BoxFit.contain,
+                      height: 150.0,
+                      width: 150.0,
+                    ),
                   ),
                   new Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -106,7 +110,8 @@ class CharacterListPageState extends State<CharacterListPage> {
                     new CharDetails(charName, _houseName)),
               );
             },
-          ));
+          )
+      );
     }
     if (data == null) {
       return new LoadingPage();
@@ -119,13 +124,17 @@ class CharacterListPageState extends State<CharacterListPage> {
                       child: new GridView.builder(
                           itemCount: data == null ? 0 : data.length,
                           gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                              childAspectRatio: (1 / 1),
                               crossAxisCount: 2),
                           itemBuilder: (BuildContext context, int index) {
                             var housename = data.keys.toList()[index]
                                 .toString();
                             return myCard(
                                 housename, data[housename]['image'].toString());
-                          }))),
+                          }
+                      )
+                  )
+              ),
             ],
           )
       );
