@@ -51,7 +51,9 @@ class HouseListState extends State<HouseList> {
                     padding:const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
                     child: new Image.network(
                       houseImageUrl,
-                      fit: BoxFit.cover,
+                      height: 150.0,
+                      width: 150.0,
+                      fit: BoxFit.contain,
                     ),
                   ),
                   new Padding(
@@ -85,7 +87,7 @@ class HouseListState extends State<HouseList> {
                   itemCount: data == null ? 0 : data.length,
                   gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: (4 / 5.5)
+                      childAspectRatio: (1 / 1)
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     var housename = data.keys.toList()[index].toString();
