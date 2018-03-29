@@ -72,7 +72,7 @@ class CharacterListPageState extends State<CharacterListPage> {
 
     Card myCard(String charName, String charImageUrl) {
       return new Card(
-          elevation: 5.0,
+          elevation: 2.0,
           child: new InkWell(
             child: new Container(
               alignment: Alignment.center,

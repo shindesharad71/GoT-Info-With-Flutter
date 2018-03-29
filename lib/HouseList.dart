@@ -39,7 +39,7 @@ class HouseListState extends State<HouseList> {
     Card myCard(String houseName, String houseImageUrl) {
       return new Card(
 //        TODO- USE OF STACKED widget
-          elevation: 5.0,
+          elevation: 2.0,
           child: new InkWell(
             child: new Container(
               alignment: Alignment.center,
