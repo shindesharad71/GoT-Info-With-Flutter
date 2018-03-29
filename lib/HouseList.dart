@@ -33,7 +33,7 @@ class HouseListState extends State<HouseList> {
 
     // 24 is for notification bar on Android
 
-    final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
+    final double itemHeight = (size.height - 24 - kToolbarHeight) / 2.2;
     final double itemWidth = size.width / 2;
 
     Card myCard(String houseName, String houseImageUrl) {
@@ -49,11 +49,11 @@ class HouseListState extends State<HouseList> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Padding(
-                    padding:const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                    padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
                     child: new Image.network(
                       houseImageUrl,
-                      height: 150.0,
-                      width: 150.0,
+                      height: itemWidth,
+                      width: itemWidth,
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -88,7 +88,7 @@ class HouseListState extends State<HouseList> {
                   itemCount: data == null ? 0 : data.length,
                   gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: (1 / 1.2)
+                      childAspectRatio: (itemWidth / itemHeight)
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     var housename = data.keys.toList()[index].toString();

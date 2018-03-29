@@ -82,12 +82,12 @@ class CharacterListPageState extends State<CharacterListPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new Padding(
-                    padding:const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                     child: new Image.network(
                       charImageUrl,
                       fit: BoxFit.contain,
-                      height: 150.0,
-                      width: 150.0,
+                      height: itemWidth,
+                      width: itemWidth,
                     ),
                   ),
                   new Padding(
@@ -124,7 +124,7 @@ class CharacterListPageState extends State<CharacterListPage> {
                       child: new GridView.builder(
                           itemCount: data == null ? 0 : data.length,
                           gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                              childAspectRatio: (1 / 1),
+                              childAspectRatio: (itemWidth / itemHeight),
                               crossAxisCount: 2),
                           itemBuilder: (BuildContext context, int index) {
                             var housename = data.keys.toList()[index]
