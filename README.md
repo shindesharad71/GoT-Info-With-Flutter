@@ -10,4 +10,7 @@ For help getting started with Flutter, view our online
 
 ### Demo - First Page
 
-<img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen1.png?raw=true" width="300"> <img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen2.png?raw=true" width="300"> <img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen3.png?raw=true" width="300">
+<img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen1.png?raw=true" width="300">              <img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen2.png?raw=true" width="300">
+
+
+<img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen3.png?raw=true" width="300">
