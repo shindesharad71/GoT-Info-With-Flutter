@@ -10,4 +10,4 @@ For help getting started with Flutter, view our online
 
 ### Demo - First Page
 
-![demo 1](https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen1.png?raw=true | width=350) ![demo 2](https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen2.png?raw=true) ![demo 3](https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen3.png?raw=true)
+<img src="https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/screens/screen1.png?raw=true" width="350">
