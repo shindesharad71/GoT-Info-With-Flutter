@@ -1,63 +1,139 @@
 {
   "houses": {
     "House Arryan": {
-      "image":
-        "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153"
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153",
+      "house_details": "",
+      "characters": {
+        "Lysa Arryn": {
+          "real_name": "Kate Dickie",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/lysa-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Robin Arryn": {
+          "real_name": "Lino Facioli",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robyn-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        }
+      }
     },
+
+    
     "House Baratheon": {
-      "image":
-        "http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png"
+      "image": "http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png",
+      "house_details": "House Baratheon of Storm's End is a legally extinct Great House of Westeros. A cadet branch was formerly the royal house, but House Lannister now controls the throne. House Baratheon traditionally ruled the Stormlands on the eastern coast of Westeros, aptly named for its frequent storms, from their seat of Storm's End.House Baratheon became the royal house of the Seven Kingdoms after Robert Baratheon led a rebellion against the Targaryen dynasty. At the end of the rebellion, Robert ascended the Iron Throne as Robert I and married Cersei Lannister after the death of Lyanna Stark.",
+      "characters": {
+        "Joffrey Baratheon": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/joffrey-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Jack Gleeson"
+        },
+        "Renly Baratheon": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/renly-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Gethin Anthony"
+        },
+        "Stannis Baratheon": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/stannis-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Stephen Dillane"
+        },
+        "Tommen Baratheon": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tommon-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Dean-charles Chapman"
+        },
+        "Myrcella Baratheon": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/myrcella-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Nell Tiger Free"
+        }
+      }
     },
+
+
     "House Lannister": {
       "characters": {
         "Cersei Lannister": {
-          "dob": "09/09/09",
-          "image":
-            "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c7/Queen_Cersei_Main_The_winds_of_Winter.jpg/revision/latest/scale-to-width-down/366?cb=20161215024728",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/cersei-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Lena Headey"
         },
         "Jaime Lannister": {
-          "dob": "11/11/11",
-          "image":
-            "https://media.immediate.co.uk/volatile/sites/3/2017/08/Jaime-Lannister.jpg?quality=90&resize=620,413",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/jamie-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Nikolaj Coster-Waldau"
         },
+        "Tyrion Lannister": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tyrion-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Peter Dinklage"
+        },
         "Tywin Lannister": {
-          "dob": "11/11/11",
-          "image":
-            "https://vignette.wikia.nocookie.net/gameofthrones/images/7/71/Tywin_Lannister_4x08.jpg/revision/latest/scale-to-width-down/348?cb=20170830015346",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tywin-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Charles Dance"
         },
-        "Tyrion Lannister": {
-          "dob": "11/11/11",
-          "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d9/Tyrion_Lannister.jpg/revision/latest?cb=20110411054140",
-          "real_name": "Peter Dinklage"
+        "Lancel Lannister": {
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/lancel-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Eugene Simon"
         }
       },
-      "house_deatils":
-        "House Lannister is one of the Great Houses of the Seven Kingdoms and the principal house of the Westerlands. Its seat is at Casterly Rock. Its coat of arms displays a golden lion rampant on a crimson field, and its words are Hear Me Roar! More famous than its official motto is the House's unofficial one: A Lannister always pays his debts. Bastards born in The Westerlands are given the surname Hill. The Lannisters ruled as Kings of the Rock until House Targaryen invaded Westeros. They are the richest family in the Seven Kingdoms because of the gold mines located in their lands.",
-      "image":
-        "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
+      "house_deatils": "House Lannister is one of the Great Houses of the Seven Kingdoms and the principal house of the Westerlands. Its seat is at Casterly Rock. Its coat of arms displays a golden lion rampant on a crimson field, and its words are Hear Me Roar! More famous than its official motto is the House's unofficial one: A Lannister always pays his debts. Bastards born in The Westerlands are given the surname Hill. The Lannisters ruled as Kings of the Rock until House Targaryen invaded Westeros. They are the richest family in the Seven Kingdoms because of the gold mines located in their lands.",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
     },
+
+
     "House Stark": {
       "characters": {
-        "ned": {
-          "dob": "07/07/07",
-          "real_name": "ja"
+        "Ned Stark": {
+          "real_name": "Sean Bean",
+          "image": "https://cdn.opendemocracy.net/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/557099/123_11.jpg"
+        },
+        "Catelyn Stark": {
+          "real_name": "Michelle Fairley",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/catelyn-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Robb Stark": {
+          "real_name": "Richard Madden",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robert-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Sansa Stark": {
+          "real_name": "Sophie Turner",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/sansa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Arya Stark": {
+          "real_name": "Maisie Williams",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/arya-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Bran Stark": {
+          "real_name": "Isaac Hempstead-Wright",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/bran-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Rickon Stark": {
+          "real_name": "Art Parkinson",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/rickon-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Benjen Stark": {
+          "real_name": "Joseph Mawle",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/benjen-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Talisa Stark": {
+          "real_name": "Oona Chaplin",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/talisa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
         }
       },
-      "house_details":
-        "House Stark is one of the Great Houses of the Seven Kingdoms and the principal house of the North. Its seat is at Winterfell, one of the oldest castles in the Seven Kingdoms. Its coat of arms displays a grey direwolf running on a white field, and its words are Winter is Coming. House Stark had ruled as the Kings in the North for thousands of years until House Targaryen conquered Westeros, whereafter the Starks are the Lords of Winterfell and Wardens of the North. For prizing honor and devotion to duty, House Stark is the closest of the noble houses to heroism.Over the course of the novels, the Starks are scattered by the War of the Five Kings, and the fate of the House remains uncertain, as most characters believe that all the legitimate Stark sons are dead.",
-      "image":
-        "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"
+      "house_details": "House Stark is one of the Great Houses of the Seven Kingdoms and the principal house of the North. Its seat is at Winterfell, one of the oldest castles in the Seven Kingdoms. Its coat of arms displays a grey direwolf running on a white field, and its words are Winter is Coming. House Stark had ruled as the Kings in the North for thousands of years until House Targaryen conquered Westeros, whereafter the Starks are the Lords of Winterfell and Wardens of the North. For prizing honor and devotion to duty, House Stark is the closest of the noble houses to heroism.Over the course of the novels, the Starks are scattered by the War of the Five Kings, and the fate of the House remains uncertain, as most characters believe that all the legitimate Stark sons are dead.",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"
     },
+
+
     "House Targaryen": {
-      "image":
-        "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320"
+      "house_deatils": "House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320",
+      "characters": {
+        "Daenerys Targaryen": {
+          "real_name": "Emilia Clarke",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/daenarys-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        },
+        "Viserys Targaryen": {
+          "real_name": "Harry Lloyd",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/viserys-targaryen-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+        }
+      }
     },
+
+
     "House Tully": {
-      "image":
-        "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648"
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648"
     }
   }
 }
