@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
 import 'package:layouts/GradientAppBar.dart';
 import 'package:layouts/LoadingPage.dart';
-import 'package:layouts/wid/CustomContainer.dart';
-
 class CharacterList extends StatelessWidget {
   final String _houseName;
 
@@ -65,7 +63,6 @@ class CharacterListPageState extends State<CharacterListPage> {
     var size = MediaQuery
         .of(context)
         .size;
-
     // 24 is for notification bar on Android
 
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
@@ -75,8 +72,35 @@ class CharacterListPageState extends State<CharacterListPage> {
       return new Card(
           elevation: 2.0,
           child: new InkWell(
-            child: new CustomContainer(
-                charImageUrl, charName, itemWidth, itemHeight).customFun(),
+            child: new Container(
+              alignment: Alignment.center,
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  new Padding(
+                    padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                    child: new Image.network(
+                      charImageUrl,
+                      fit: BoxFit.contain,
+                      height: 3*7.50*10,
+                      width: 4*7.50*10,
+                    ),
+                  ),
+                  new Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: new Center(
+                      child: new Text(
+                        charName,
+                        style: new TextStyle(fontSize: 16.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             onTap: () {
               Navigator.of(context).push(
                 new MaterialPageRoute(
@@ -98,8 +122,8 @@ class CharacterListPageState extends State<CharacterListPage> {
                       child: new GridView.builder(
                           itemCount: data == null ? 0 : data.length,
                           gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                              childAspectRatio: (itemWidth / itemHeight),
-                              crossAxisCount: 2),
+                              childAspectRatio: (4 / 3),
+                              crossAxisCount: 1),
                           itemBuilder: (BuildContext context, int index) {
                             var housename = data.keys.toList()[index]
                                 .toString();
