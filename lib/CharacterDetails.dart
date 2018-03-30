@@ -11,8 +11,6 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    // TODO: implement build
     return new Scaffold(
         body: new Column(
           children: <Widget>[new CharacterDetails(_characterName, _houseName)],
@@ -27,7 +25,6 @@ class CharacterDetails extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new CharacterDetailsPageState(_characterName, _houseName);
   }
 }
@@ -118,14 +115,12 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     this.getData();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
   }
 }

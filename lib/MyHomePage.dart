@@ -5,7 +5,6 @@ import 'package:layouts/HouseList.dart';
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       body: new HomePageBody(),
     );
@@ -20,7 +19,6 @@ class HomePageBody extends StatefulWidget {
 class _HomePageBodyState extends State<HomePageBody> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Column(
       children: <Widget>[
         new GradientAppBar("Game Of Thrones"),

@@ -12,7 +12,6 @@ class CharacterList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
 //        appBar: new AppBar(title: new Text(_houseName),),
         body: new Column(
@@ -31,7 +30,6 @@ class CharacterListPage extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new CharacterListPageState(_houseName);
   }
 }
@@ -141,14 +139,12 @@ class CharacterListPageState extends State<CharacterListPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     this.getData();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
   }
 }
