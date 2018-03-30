@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterList.dart' show CharacterList;
 import 'package:layouts/LoadingPage.dart';
+import 'package:layouts/wid/CustomContainer.dart';
 
 class HouseList extends StatefulWidget {
   @override
@@ -41,35 +42,8 @@ class HouseListState extends State<HouseList> {
 //        TODO- USE OF STACKED widget
           elevation: 2.0,
           child: new InkWell(
-            child: new Container(
-              alignment: Alignment.center,
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new Padding(
-                    padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                    child: new Image.network(
-                      houseImageUrl,
-                      height: itemWidth,
-                      width: itemWidth,
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  new Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: new Center(
-                      child: new Text(
-                        houseName,
-                        style: new TextStyle(fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            child: new CustomContainer(
+                houseImageUrl, houseName, itemWidth, itemHeight).customFun(),
             onTap: () {
               Navigator.of(context).push(
                 new MaterialPageRoute(
@@ -77,7 +51,8 @@ class HouseListState extends State<HouseList> {
                     new CharacterList(houseName)),
               );
             },
-          ));
+          )
+      );
     }
     if (data == null) {
       return new LoadingPage();
