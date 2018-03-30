@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/LoadingPage.dart';
@@ -11,6 +12,7 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return new Scaffold(
         body: new Column(
@@ -52,6 +54,7 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
 //    print('abcd - $data');
     return "Success!";
   }
+
 /*
 * new Row(
 //                crossAxisAlignment: CrossAxisAlignment.center,
@@ -91,7 +94,7 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
             new Padding(
               padding: const EdgeInsets.all(12.0),
               child: new Text(
-                _characterName+'\n('+data["real_name"]+')',
+                _characterName + '\n(' + data["real_name"] + ')',
                 style: new TextStyle(
                     fontSize: 28.0,
                     color: Colors.black87,
