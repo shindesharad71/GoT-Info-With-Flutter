@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/CharacterList.dart' show CharacterList;
 import 'package:layouts/LoadingPage.dart';
+import 'package:flutter_image/network.dart';
 
 class HouseList extends StatefulWidget {
   @override
@@ -49,8 +50,8 @@ class HouseListState extends State<HouseList> {
                 children: <Widget>[
                   new Padding(
                     padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                    child: new Image.network(
-                      houseImageUrl,
+                    child: new Image(
+                      image: new NetworkImageWithRetry(houseImageUrl),
                       height: itemWidth,
                       width: itemWidth,
                       fit: BoxFit.contain,

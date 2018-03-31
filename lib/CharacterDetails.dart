@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/LoadingPage.dart';
+import 'package:flutter_image/network.dart';
 
 class CharDetails extends StatelessWidget {
   final String _characterName, _houseName;
@@ -81,8 +82,8 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
           children: <Widget>[
             new Padding(
               padding: const EdgeInsets.fromLTRB(0.0, 24.0, 0.0, 0.0),
-              child: new Image.network(
-                data["image"],
+              child: new Image(
+                image: new NetworkImageWithRetry(data["image"]),
                 height: 200.0,
                 width: itemWidth,
               ),

@@ -90,6 +90,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_image:
+    dependency: "direct main"
+    description:
+      name: flutter_image
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -395,4 +402,5 @@ packages:
     source: hosted
     version: "2.1.13"
 sdks:
-  dart: ">=2.0.0-dev.23.0 <=2.0.0-edge.fe96de2858f078e4ad04f8f30640184bf3d8102d"
+  dart: ">=2.0.0-dev.28.0 <=2.0.0-edge.fe96de2858f078e4ad04f8f30640184bf3d8102d"
+  flutter: ">=0.1.4 <2.0.0"

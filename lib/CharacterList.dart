@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:layouts/CharacterDetails.dart';
 import 'package:layouts/GradientAppBar.dart';
 import 'package:layouts/LoadingPage.dart';
+import 'package:flutter_image/network.dart';
+
 class CharacterList extends StatelessWidget {
   final String _houseName;
 
@@ -79,8 +81,8 @@ class CharacterListPageState extends State<CharacterListPage> {
                 children: <Widget>[
                   new Padding(
                     padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                    child: new Image.network(
-                      charImageUrl,
+                    child: new Image(
+                      image:new NetworkImageWithRetry(charImageUrl),
                       fit: BoxFit.contain,
                       height: 3*7.50*10,
                       width: 4*7.50*10,
