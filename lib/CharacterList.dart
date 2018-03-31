@@ -66,14 +66,14 @@ class CharacterListPageState extends State<CharacterListPage> {
     // 24 is for notification bar on Android
 
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
-    final double itemWidth = size.width / 2;
+    final double itemWidth = size.width;
 
     Card myCard(String charName, String charImageUrl) {
       return new Card(
           elevation: 2.0,
           child: new InkWell(
             child: new Container(
-              alignment: Alignment.center,
+              alignment: Alignment.topCenter,
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,10 +82,11 @@ class CharacterListPageState extends State<CharacterListPage> {
                   new Padding(
                     padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                     child: new Image(
-                      image:new NetworkImageWithRetry(charImageUrl),
+                      alignment: Alignment.topCenter,
+                      image: new NetworkImageWithRetry(charImageUrl),
                       fit: BoxFit.contain,
-                      height: 3*7.50*10,
-                      width: 4*7.50*10,
+                      height: 3 * 7.0 * 10,
+                      width: itemWidth,
                     ),
                   ),
                   new Padding(

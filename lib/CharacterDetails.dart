@@ -84,8 +84,8 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
               padding: const EdgeInsets.fromLTRB(0.0, 24.0, 0.0, 0.0),
               child: new Image(
                 image: new NetworkImageWithRetry(data["image"]),
-                height: 200.0,
                 width: itemWidth,
+                fit: BoxFit.fill,
               ),
             ),
             new Padding(
