@@ -5,15 +5,28 @@ import 'package:connectivity/connectivity.dart';
 import 'package:layouts/MyHomePage.dart';
 
 void main() => runApp(new MyApp());
+var connect = false;
 
 class MyApp extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
+  MyAppState createState() {
     return new MyAppState();
   }
 }
 
 class MyAppState extends State<MyApp> {
+
+  Future<bool> getStatus() async {
+    var connectivityResult = await (new Connectivity().checkConnectivity());
+    this.setState(() {
+      if (connectivityResult == ConnectivityResult.mobile ||
+          connectivityResult == ConnectivityResult.wifi) {
+        connect = true;
+      }
+    });
+    return true;
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -21,18 +34,23 @@ class MyAppState extends State<MyApp> {
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
     ]);
-
-    var connect = false;
-
-    var connectivityResult = await (new Connectivity().checkConnectivity());
-    if (connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
-      connect = true;
-    }
-
     return new MaterialApp(
       title: 'Flutter Layouts',
       theme: new ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
       home: connect ? new MyHomePage() : new Text('No Connection!'),
     );
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.getStatus();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 }

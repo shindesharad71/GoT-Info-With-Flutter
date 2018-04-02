@@ -20,7 +20,7 @@ class HouseListState extends State<HouseList> {
     );
 
     this.setState(() {
-      data = JSON.decode(response.body);
+      data = json.decode(response.body);
     });
 //    print(data);
     return "Success!";
