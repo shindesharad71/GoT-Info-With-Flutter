@@ -77,22 +77,28 @@ class CharacterListPageState extends State<CharacterListPage> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                new Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                  child: new Image(
-                    alignment: Alignment.topCenter,
-                    image: new NetworkImageWithRetry(charImageUrl),
-                    fit: BoxFit.fitWidth,
-                    width: itemWidth,
-                    height: itemHeight - 50.0,
+                new Expanded(
+                  flex:4,
+                  child: new Padding(
+                    padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                    child: new Image(
+                      alignment: Alignment.topCenter,
+                      image: new NetworkImageWithRetry(charImageUrl),
+                      fit: BoxFit.fitWidth,
+                      width: itemWidth,
+//                      height: itemHeight - 50.0,
+                    ),
                   ),
                 ),
-                new Center(
-                  child: new Text(
-                    charName,
-                    style: new TextStyle(fontSize: 24.0),
-                    textAlign: TextAlign.center,
-                    softWrap: true,
+                new Expanded(
+                  flex: 1,
+                  child: new Center(
+                    child: new Text(
+                      charName,
+                      style: new TextStyle(fontSize: 24.0),
+                      textAlign: TextAlign.center,
+                      softWrap: true,
+                    ),
                   ),
                 ),
               ],
