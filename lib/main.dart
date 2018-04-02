@@ -36,7 +36,7 @@ class MyAppState extends State<MyApp> {
       DeviceOrientation.portraitUp,
     ]);
     return new MaterialApp(
-      title: 'Flutter Layouts',
+      title: 'GOT',
       theme: new ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
       home: connect ? new MyHomePage() : new NoConnectionPage(),
     );
