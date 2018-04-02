@@ -25,9 +25,7 @@ class MyAppState extends State<MyApp> {
     var connect = false;
 
     var connectivityResult = await (new Connectivity().checkConnectivity());
-    if (connectivityResult == ConnectivityResult.mobile) {
-      connect = true;
-    } else if (connectivityResult == ConnectivityResult.wifi) {
+    if (connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
       connect = true;
     }
 
