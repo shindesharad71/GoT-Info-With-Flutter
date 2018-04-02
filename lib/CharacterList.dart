@@ -6,6 +6,7 @@ import 'package:layouts/CharacterDetails.dart';
 import 'package:layouts/GradientAppBar.dart';
 import 'package:layouts/LoadingPage.dart';
 import 'package:flutter_image/network.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class CharacterList extends StatelessWidget {
   final String _houseName;
@@ -17,11 +18,11 @@ class CharacterList extends StatelessWidget {
     return new Scaffold(
 //        appBar: new AppBar(title: new Text(_houseName),),
         body: new Column(
-          children: <Widget>[
-            new GradientAppBar(_houseName),
-            new CharacterListPage(_houseName)
-          ],
-        ));
+      children: <Widget>[
+        new GradientAppBar(_houseName),
+        new CharacterListPage(_houseName)
+      ],
+    ));
   }
 }
 
@@ -60,9 +61,7 @@ class CharacterListPageState extends State<CharacterListPage> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery
-        .of(context)
-        .size;
+    var size = MediaQuery.of(context).size;
     // 24 is for notification bar on Android
 
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2.2;
@@ -81,12 +80,19 @@ class CharacterListPageState extends State<CharacterListPage> {
                   flex: 4,
                   child: new Padding(
                     padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                    child: new Image(
+                    /* child: new Image(
                       alignment: Alignment.topCenter,
                       image: new NetworkImageWithRetry(charImageUrl),
                       fit: BoxFit.fitWidth,
                       width: itemWidth,
 //                      height: itemHeight - 50.0,
+                    ), */
+                    child: new FadeInImage.memoryNetwork(
+                      placeholder: kTransparentImage,
+                      image: charImageUrl,
+                      alignment: Alignment.topCenter,
+                      fit: BoxFit.fitWidth,
+                      width: itemWidth,
                     ),
                   ),
                 ),
@@ -105,42 +111,36 @@ class CharacterListPageState extends State<CharacterListPage> {
             ),
             onTap: () {
               Navigator.of(context).push(
-                new MaterialPageRoute(
-                    builder: (BuildContext context) =>
-                    new CharDetails(charName, _houseName)),
-              );
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            new CharDetails(charName, _houseName)),
+                  );
             },
-          )
-      );
+          ));
     }
+
     if (data == null) {
       return new LoadingPage();
     } else {
       return new Flexible(
           child: new Column(
-            children: <Widget>[
-              new Flexible(
-                  child: new Container(
-                      child: new GridView.builder(
-                          shrinkWrap: true,
-                          itemCount: data == null ? 0 : data.length,
-                          gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+        children: <Widget>[
+          new Flexible(
+              child: new Container(
+                  child: new GridView.builder(
+                      shrinkWrap: true,
+                      itemCount: data == null ? 0 : data.length,
+                      gridDelegate:
+                          new SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 1,
-                              childAspectRatio: itemWidth / itemHeight
-                          ),
-                          itemBuilder: (BuildContext context, int index) {
-                            var housename = data.keys.toList()[index]
-                                .toString();
-                            return myCard(
-                                housename,
-                                data[housename]['image'].toString());
-                          }
-                      )
-                  )
-              ),
-            ],
-          )
-      );
+                              childAspectRatio: itemWidth / itemHeight),
+                      itemBuilder: (BuildContext context, int index) {
+                        var housename = data.keys.toList()[index].toString();
+                        return myCard(
+                            housename, data[housename]['image'].toString());
+                      }))),
+        ],
+      ));
     }
   }
 
