@@ -78,7 +78,7 @@ class CharacterListPageState extends State<CharacterListPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 new Expanded(
-                  flex:4,
+                  flex: 4,
                   child: new Padding(
                     padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                     child: new Image(
