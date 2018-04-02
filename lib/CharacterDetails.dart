@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:layouts/LoadingPage.dart';
 import 'package:flutter_image/network.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class CharDetails extends StatelessWidget {
   final String _characterName, _houseName;
@@ -82,11 +83,17 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
           children: <Widget>[
             new Padding(
               padding: const EdgeInsets.fromLTRB(0.0, 24.0, 0.0, 0.0),
-              child: new Image(
-                image: new NetworkImageWithRetry(data["image"]),
+              /* child: new Image(
+                image: new NetworkImageWithRetry(),
                 width: itemWidth,
                 fit: BoxFit.fill,
-              ),
+              ), */
+              child: new FadeInImage.memoryNetwork(
+                      placeholder: kTransparentImage,
+                      image: data["image"],
+                      width: itemWidth,
+                      fit: BoxFit.fill,
+                    ),
             ),
             new Padding(
               padding: const EdgeInsets.all(12.0),

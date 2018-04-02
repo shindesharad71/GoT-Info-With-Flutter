@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:layouts/GradientAppBar.dart';
 import 'package:layouts/HouseList.dart';
 
@@ -51,8 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              new Image.network(
+              /* new Image.network(
                 houseImageUrl,
+                height: 160.0,
+                width: 160.0,
+              ), */
+              new FadeInImage.memoryNetwork(
+                placeholder: kTransparentImage,
+                image: houseImageUrl,
                 height: 160.0,
                 width: 160.0,
               ),
