@@ -65,42 +65,37 @@ class CharacterListPageState extends State<CharacterListPage> {
         .size;
     // 24 is for notification bar on Android
 
-    final double itemHeight = (size.height - kToolbarHeight - 24) / 3;
+    final double itemHeight = (size.height - kToolbarHeight - 24) / 2.2;
     final double itemWidth = size.width;
 
     Card myCard(String charName, String charImageUrl) {
       return new Card(
           elevation: 2.0,
           child: new InkWell(
-            child: new Container(
-              alignment: Alignment.topCenter,
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  new Padding(
-                    padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                    child: new Image(
-                      alignment: Alignment.topCenter,
-                      image: new NetworkImageWithRetry(charImageUrl),
-                      fit: BoxFit.fitWidth,
-                      height: 3*7.0*10,
-                      width: itemWidth,
-                    ),
+            child: new Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                new Padding(
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                  child: new Image(
+                    alignment: Alignment.topCenter,
+                    image: new NetworkImageWithRetry(charImageUrl),
+                    fit: BoxFit.fitWidth,
+                    width: itemWidth,
+                    height: itemHeight - 50.0,
                   ),
-                  new Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: new Center(
-                      child: new Text(
-                        charName,
-                        style: new TextStyle(fontSize: 24.0),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
+                ),
+                new Center(
+                  child: new Text(
+                    charName,
+                    style: new TextStyle(fontSize: 24.0),
+                    textAlign: TextAlign.center,
+                    softWrap: true,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             onTap: () {
               Navigator.of(context).push(
@@ -121,15 +116,18 @@ class CharacterListPageState extends State<CharacterListPage> {
               new Flexible(
                   child: new Container(
                       child: new GridView.builder(
+                          shrinkWrap: true,
                           itemCount: data == null ? 0 : data.length,
                           gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                              childAspectRatio: (4 / 3),
-                              crossAxisCount: 1),
+                              crossAxisCount: 1,
+                              childAspectRatio: itemWidth / itemHeight
+                          ),
                           itemBuilder: (BuildContext context, int index) {
                             var housename = data.keys.toList()[index]
                                 .toString();
                             return myCard(
-                                housename, data[housename]['image'].toString());
+                                housename,
+                                data[housename]['image'].toString());
                           }
                       )
                   )
