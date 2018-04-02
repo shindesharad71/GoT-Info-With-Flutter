@@ -10,11 +10,6 @@ class LoadingPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              new CircularProgressIndicator()
-            ]
-        )
-    );
+            children: <Widget>[new CircularProgressIndicator()]));
   }
-
 }
