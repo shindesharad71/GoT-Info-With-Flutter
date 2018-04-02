@@ -15,8 +15,8 @@ class CharDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         body: new Column(
-          children: <Widget>[new CharacterDetails(_characterName, _houseName)],
-        ));
+      children: <Widget>[new CharacterDetails(_characterName, _houseName)],
+    ));
   }
 }
 
@@ -69,9 +69,7 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
     if (data == null) {
       return new LoadingPage();
     } else {
-      var size = MediaQuery
-          .of(context)
-          .size;
+      var size = MediaQuery.of(context).size;
 
       /*24 is for notification bar on Android*/
       final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
@@ -89,11 +87,11 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
                 fit: BoxFit.fill,
               ), */
               child: new FadeInImage.memoryNetwork(
-                      placeholder: kTransparentImage,
-                      image: data["image"],
-                      width: itemWidth,
-                      fit: BoxFit.fill,
-                    ),
+                placeholder: kTransparentImage,
+                image: data["image"],
+                width: itemWidth,
+                fit: BoxFit.fill,
+              ),
             ),
             new Padding(
               padding: const EdgeInsets.all(12.0),
