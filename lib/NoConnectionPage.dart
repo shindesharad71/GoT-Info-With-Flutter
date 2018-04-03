@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layouts/main.dart';
 
 class NoConnectionPage extends StatelessWidget {
   @override
@@ -6,30 +7,43 @@ class NoConnectionPage extends StatelessWidget {
     return new Center(
       child: new Scaffold(
           body: new Container(
-              alignment: Alignment.center,
+            alignment: Alignment.center,
               margin: const EdgeInsets.fromLTRB(0.0, 86.0, 0.0, 0.0),
               child: new Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    new Icon(
-                      const IconData(0xe1ba, fontFamily: 'MaterialIcons'),
-                      size: 50.0,
+                    new Image.asset(
+                      'assets/img/noconnection.png',
+                      height: 180.0,
+                      width: 180.0,
                       color: Colors.grey,
-                    ),
+                      fit: BoxFit.cover,),
+
                     new Padding(
-                      padding: const EdgeInsets.all(18.0),
+                      padding: const EdgeInsets.only(top:22.0),
                       child: new Text(
                         'No Internet Connection!',
                         style: new TextStyle(
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w600,
-                          color: Colors.grey
+                            color: Colors.grey,
+                          fontSize: 18.0
+
                         ),
                       ),
+                    ),
+                    new IconButton(
+                        icon: new Icon(Icons.refresh),
+                        iconSize: 50.0,
+                        color: Colors.grey,
+                      onPressed: ()=>new MyApp(),
                     )
-                  ]))),
+                  ]
+              )
+          )
+      ),
     );
   }
 }
