@@ -72,7 +72,7 @@ class HouseListState extends State<HouseList> {
               Navigator.of(context).push(
                     new MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            new CharacterList(houseName)),
+                            new CharacterList(houseName,data)),
                   );
             },
           ));

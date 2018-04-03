@@ -10,58 +10,68 @@ import 'package:transparent_image/transparent_image.dart';
 
 class CharacterList extends StatelessWidget {
   final String _houseName;
+  final Map data;
 
-  CharacterList(this._houseName);
+  CharacterList(this._houseName, this.data);
+
 
   @override
   Widget build(BuildContext context) {
+    Map charData = data;
+    charData = data[_houseName]["characters"];
+//    print(charData);
     return new Scaffold(
 //        appBar: new AppBar(title: new Text(_houseName),),
         body: new Column(
-      children: <Widget>[
-        new GradientAppBar(_houseName),
-        new CharacterListPage(_houseName)
-      ],
-    ));
+          children: <Widget>[
+            new GradientAppBar(_houseName),
+
+            new CharacterListPage(_houseName, charData)
+          ],
+        ));
   }
 }
 
 class CharacterListPage extends StatefulWidget {
   final String _houseName;
+  final Map charData;
 
-  CharacterListPage(this._houseName);
+  CharacterListPage(this._houseName, this.charData);
 
   @override
   State<StatefulWidget> createState() {
-    return new CharacterListPageState(_houseName);
+    return new CharacterListPageState(_houseName, charData);
   }
 }
 
 class CharacterListPageState extends State<CharacterListPage> {
   final String _houseName;
+  final Map charData;
 
-  CharacterListPageState(this._houseName);
+  CharacterListPageState(this._houseName, this.charData);
 
-  Map data;
-
-  Future<String> getData() async {
-    var response = await http.get(
-      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/" +
-          _houseName +
-          "/characters" +
-          ".json"),
-    );
-
-    this.setState(() {
-      data = JSON.decode(response.body);
-    });
-    print(data);
-    return "Success!";
-  }
+//  Map data;
+//
+//  Future<String> getData() async {
+//    var response = await http.get(
+//      Uri.encodeFull("https://got-flutter.firebaseio.com/houses/" +
+//          _houseName +
+//          "/characters" +
+//          ".json"),
+//    );
+//
+//    this.setState(() {
+//      data = JSON.decode(response.body);
+//    });
+//    print(data);
+//    return "Success!";
+//  }
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size = MediaQuery
+        .of(context)
+        .size;
     // 24 is for notification bar on Android
 
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2.2;
@@ -111,43 +121,50 @@ class CharacterListPageState extends State<CharacterListPage> {
             ),
             onTap: () {
               Navigator.of(context).push(
-                    new MaterialPageRoute(
-                        builder: (BuildContext context) =>
-                            new CharDetails(charName, _houseName)),
-                  );
+                new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                    new CharDetails(charName, _houseName,charData)),
+              );
             },
           ));
     }
 
-    if (data == null) {
+    if (charData == null) {
       return new LoadingPage();
     } else {
+      print(charData.keys.toList());
       return new Flexible(
           child: new Column(
-        children: <Widget>[
-          new Flexible(
-              child: new Container(
-                  child: new GridView.builder(
-                      shrinkWrap: true,
-                      itemCount: data == null ? 0 : data.length,
-                      gridDelegate:
+            children: <Widget>[
+              new Flexible(
+                  child: new Container(
+                      child: new GridView.builder(
+                          shrinkWrap: true,
+                          itemCount: charData == null ? 0 : charData.length,
+                          gridDelegate:
                           new SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 1,
                               childAspectRatio: itemWidth / itemHeight),
-                      itemBuilder: (BuildContext context, int index) {
-                        var housename = data.keys.toList()[index].toString();
-                        return myCard(
-                            housename, data[housename]['image'].toString());
-                      }))),
-        ],
-      ));
+                          itemBuilder: (BuildContext context, int index) {
+                            var charName = charData.keys.toList()[index]
+                                .toString();
+                            return myCard(
+                                charName,
+                                charData[charName]['image'].toString());
+                          }
+                      )
+                  )
+              ),
+            ],
+          )
+      );
     }
   }
 
   @override
   void initState() {
     super.initState();
-    this.getData();
+//    this.getData();
   }
 
   @override
