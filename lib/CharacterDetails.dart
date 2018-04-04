@@ -14,7 +14,6 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("aaaa :" + data[_characterName].toString());
     Map charDetailsData = data[_characterName];
     return new Scaffold(
         body: new Column(
