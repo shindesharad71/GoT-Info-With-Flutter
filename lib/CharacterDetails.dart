@@ -14,7 +14,6 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     Map charDetailsData = data[_characterName];
     return new Scaffold(
 
@@ -67,7 +66,7 @@ class CharacterDetailsPage extends StatelessWidget {
             flex: 1,
             child: new SingleChildScrollView(
               child: new Padding(
-                padding: const EdgeInsets.only(left: 8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: new Column(
                   children: <Widget>[
                     new Text(
