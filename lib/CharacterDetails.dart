@@ -14,72 +14,29 @@ class CharDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("aaaa :" + data[_characterName].toString());
+//    print("aaaa :" + data[_characterName].toString());
     Map charDetailsData = data[_characterName];
     return new Scaffold(
-        body: new Column(
-          children: <Widget>[
-            new CharacterDetails(_characterName, _houseName, charDetailsData)],
-        ));
+
+      body: new CharacterDetailsPage(
+          _characterName, _houseName, charDetailsData),
+    );
   }
 }
 
-class CharacterDetails extends StatefulWidget {
+class CharacterDetailsPage extends StatelessWidget {
   final String _characterName, _houseName;
   final Map charDetailsData;
 
-  CharacterDetails(this._characterName, this._houseName, this.charDetailsData);
-
-  @override
-  State<StatefulWidget> createState() {
-    return new CharacterDetailsPageState(
-        _characterName, _houseName, charDetailsData);
-  }
-}
-
-class CharacterDetailsPageState extends State<CharacterDetails> {
-  final String _characterName, _houseName;
-  final Map charDetailsData;
-
-  CharacterDetailsPageState(this._characterName, this._houseName,
+  CharacterDetailsPage(this._characterName, this._houseName,
       this.charDetailsData);
 
-//  Map data;
-//
-////https://got-flutter.firebaseio.com/houses/characters/cerci.json
-//  Future<String> getData() async {
-//    var response = await http.get(
-//      Uri.encodeFull(
-//          "https://got-flutter.firebaseio.com/houses/$_houseName/characters/$_characterName.json"),
-//    );
-//
-//    this.setState(() {
-//      data = JSON.decode(response.body);
-//    });
-//
-////    print('abcd - $data');
-//    return "Success!";
-//  }
-
-/*
-* new Row(
-//                crossAxisAlignment: CrossAxisAlignment.center,
-//                mainAxisAlignment: MainAxisAlignment.center,
-//                mainAxisSize: MainAxisSize.max,
-                children: [
-                  new CircularProgressIndicator(),
-                  new Text("Loading..."),
-                ],
-          ),
-* */
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery
         .of(context)
         .size;
-
-    /*24 is for notification bar on Android*/
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width;
 
@@ -89,11 +46,6 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
         children: <Widget>[
           new Padding(
             padding: const EdgeInsets.fromLTRB(0.0, 24.0, 0.0, 0.0),
-            /* child: new Image(
-                image: new NetworkImageWithRetry(),
-                width: itemWidth,
-                fit: BoxFit.fill,
-              ), */
             child: new FadeInImage.memoryNetwork(
               placeholder: kTransparentImage,
               image: charDetailsData["image"],
@@ -107,33 +59,31 @@ class CharacterDetailsPageState extends State<CharacterDetails> {
               _characterName + '\n(' + charDetailsData["real_name"] + ')',
               style: new TextStyle(
                   fontSize: 28.0,
-                  color: Colors.black87,
+                  color: Colors.black,
                   fontWeight: FontWeight.w600),
             ),
           ),
-          new Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: new Text(
-              charDetailsData["description"],
-              style: new TextStyle(
-                fontSize: 16.0,
-                color: Colors.black87,
+          new Expanded(
+            flex: 1,
+            child: new SingleChildScrollView(
+              child: new Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: new Column(
+                  children: <Widget>[
+                    new Text(
+                      charDetailsData["description"],
+                      style: new TextStyle(
+                        fontSize: 16.0, color: Colors.black,
+                      ),
+                    ),
+                    new Text("fgyhuijojhucfcgbhjnkljhbgfvcvbhjkml;kjbhcgfbhjnk")
+                  ],
+                ),
               ),
             ),
           ),
         ],
       ),
     );
-  }
-
-  @override
-  void initState() {
-    super.initState();
-//    this.getData();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }
