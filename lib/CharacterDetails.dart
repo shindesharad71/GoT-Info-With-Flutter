@@ -74,7 +74,8 @@ class CharacterDetailsPage extends StatelessWidget {
                       child: new Text(
                         charDetailsData["quote"] != null ? '"'+charDetailsData["quote"]+'"' : 'No Data!',
                         style: new TextStyle(
-                            fontSize: 18.0,
+                            fontSize: 20.0,
+                            letterSpacing: 0.5,
                             color: Colors.black,
                             fontFamily: 'Roboto',
                             fontStyle: FontStyle.italic,
@@ -84,7 +85,11 @@ class CharacterDetailsPage extends StatelessWidget {
                     new Text(
                       charDetailsData["description"] != null ? charDetailsData["description"] : 'No Data!',
                       style: new TextStyle(
-                        fontSize: 16.0, color: Colors.black,
+                        fontSize: 16.0,
+                        letterSpacing: 0.5,
+                        wordSpacing: 1.0,
+                        height: 1.05,
+                        color: Colors.black,
                       ),
                     ),
                   ],

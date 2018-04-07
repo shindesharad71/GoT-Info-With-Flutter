@@ -89,13 +89,6 @@ class CharacterListPageState extends State<CharacterListPage> {
                   flex: 4,
                   child: new Padding(
                     padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                    /* child: new Image(
-                      alignment: Alignment.topCenter,
-                      image: new NetworkImageWithRetry(charImageUrl),
-                      fit: BoxFit.fitWidth,
-                      width: itemWidth,
-//                      height: itemHeight - 50.0,
-                    ), */
                     child: new FadeInImage.memoryNetwork(
                       placeholder: kTransparentImage,
                       image: charImageUrl,

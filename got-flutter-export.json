@@ -1,137 +1,173 @@
 {
   "houses": {
     "House Arryan": {
-      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153",
-      "house_details": "",
       "characters": {
         "Lysa Arryn": {
+          "description": "Lady Lysa Arryn, née Tully, was born into House Tully as the daughter of Hoster Tully, the Lord Paramount of the Trident, and sister of Catelyn and Edmure Tully. She married into House Arryn through her marriage to Jon Arryn. After Jon's death, whom she had secretly murdered on behalf of Petyr Baelish, her true lover and later second husband, she became the Lady Regent of the Vale, ruling on behalf of her young son, Robin Arryn. She doted on her son and pursued a policy of isolationism during the War of the Five Kings despite her blood ties to House Stark.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/lysa-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Kate Dickie",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/lysa-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "What wife would do the things I've done for you? What wife would trust you the way I've trusted you? When you gave me those drops and told me to pour them into Jon's wine. My husband's wine. And you told me to write a letter to Cat telling her it was the Lannisters..."
         },
         "Robin Arryn": {
+          "description": "Lord Robin Arryn, commonly called 'Sweetrobin' by his mother, is the only surviving child and heir of Lord Jon Arryn by his wife, Lysa of House Tully. He is the Lord of the Eyrie, the head of House Arryn, the Warden of the East and Lord Paramount of the Vale of Arryn. His mother was killed by Petyr Baelish when he unexpectedly pushed her out of the Moon Door, falling hundreds of feet to her death. Petyr was left the Lord Protector of the Vale until his execution, leaving Robin the sole ruler of the Vale until another Lord Protector is chosen.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robyn-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Lino Facioli",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robyn-arryn-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "Isn't he beautiful? And strong too. Jon knew it. His last words were, 'the seed is strong.' He wanted everyone to know what a good, strong boy his son would grow up to be. Look at him, the Lord of all the Vale."
         }
-      }
+      },
+      "house_details": "",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153"
     },
-
-    
     "House Baratheon": {
-      "image": "http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png",
-      "house_details": "House Baratheon of Storm's End is a legally extinct Great House of Westeros. A cadet branch was formerly the royal house, but House Lannister now controls the throne. House Baratheon traditionally ruled the Stormlands on the eastern coast of Westeros, aptly named for its frequent storms, from their seat of Storm's End.House Baratheon became the royal house of the Seven Kingdoms after Robert Baratheon led a rebellion against the Targaryen dynasty. At the end of the rebellion, Robert ascended the Iron Throne as Robert I and married Cersei Lannister after the death of Lyanna Stark.",
       "characters": {
         "Joffrey Baratheon": {
+          "description": "King Joffrey I Baratheon was the second Baratheon king to sit on the Iron Throne. Though believed by most to be the eldest son of King Robert Baratheon and Queen Cersei Lannister, Joffrey is actually a bastard born from Cersei's incestuous relationship with her twin brother, Ser Jaime Lannister of the Kingsguard. He is the older brother of Myrcella Baratheon and Tommen Baratheon, both of whom share the same parentage.",
           "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/joffrey-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Jack Gleeson"
-        },
-        "Renly Baratheon": {
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/renly-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Gethin Anthony"
-        },
-        "Stannis Baratheon": {
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/stannis-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Stephen Dillane"
-        },
-        "Tommen Baratheon": {
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tommon-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Dean-charles Chapman"
+          "real_name": "Jack Gleeson",
+          "quote": "Everyone is mine to torment!"
         },
         "Myrcella Baratheon": {
+          "description": "Princess Myrcella Baratheon was commonly thought to be the only daughter of King Robert Baratheon and Queen Cersei Lannister. However, like her brothers, her real father is Jaime Lannister.\n\nAfter her upbringing in King's Landing, Myrcella was shipped to Dorne in an attempt to forge a marriage-alliance with House Martell by having her wed to Trystane Martell. However, Myrcella was later killed by Ellaria Sand, who took vengeance for the Lannister family's involvement in Oberyn Martell's death.",
           "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/myrcella-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Nell Tiger Free"
+          "real_name": "Nell Tiger Free",
+          "quote": "Myrcella's a sweet, innocent girl and I don't blame her at all for you."
+        },
+        "Renly Baratheon": {
+          "description": "King Renly I Baratheon was the youngest of three brothers and thus fourth in line to inherit the throne after Joffrey, Tommen, and Stannis. He was granted the title of Lord Paramount of the Stormlands by his brother Robert, whose small council he also served on as Master of Laws, but abandoned the latter position when laying claim to the Iron Throne, styling himself as Renly of the House Baratheon, First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm. Margaery Tyrell became Renly's queen when she married him in an alliance; however, it was her brother Loras whom he truly loved. During talks of an alliance with the Starks, his reign abruptly ended when a Shadow with the face of Stannis Baratheon killed Renly inside his tent. This led most of his bannermen from the Stormlands and some of the Reach to submit to his older brother Stannis as their new king.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/renly-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Gethin Anthony",
+          "quote": "He inspires no love or loyalty. He's not a king. I am."
+        },
+        "Stannis Baratheon": {
+          "description": "King Stannis I Baratheon was the Lord of Dragonstone, the younger brother of King Robert Baratheon and older brother of Renly Baratheon.\n\nFollowing Robert's death and the revelation that Robert's heir, Joffrey, is actually Queen Cersei's bastard son with her twin brother Jaime, Stannis declares himself the rightful King and begins a campaign to take the Iron Throne from the Lannisters. After amassing an army, Stannis attacks King's Landing and almost breaches the city, but is defeated by combined Lannister-Tyrell reinforcements and forced to retreat to Dragonstone. While planning his next move following the deaths of Joffrey and Robb Stark, Stannis travels North to the Wall to aid the Night's Watch against a wildling invasion and meets Jon Snow, attempting to acquire his help in retaking the North from House Bolton, who previously betrayed House Stark and murdered Robb. Stannis ultimately marches on Winterfell alone, but the weather slows his progress and he and his army are smashed by Bolton forces in the ensuing battle. In the aftermath, he is found, injured and exhausted from the battle and ultimately killed by Brienne of Tarth for his role in Renly's death.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/stannis-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Stephen Dillane",
+          "quote": "The Iron Throne is mine by right. All those that deny that are my foes."
+        },
+        "Tommen Baratheon": {
+          "description": "King Tommen I Baratheon was the younger brother of King Joffrey and Princess Myrcella. Though legally the son of the late King Robert Baratheon and Queen Cersei Lannister, his true father is Ser Jaime Lannister, the Queen's twin brother. His sole biological grandparents, Tywin and Joanna Lannister, were also first cousins.\n\nAfter his brother's death during his wedding to Margaery Tyrell, Tommen assumed the throne under the name of Tommen of the House Baratheon, the First of His Name. Many thought his reign would be a vast improvement as, unlike his brother, who was sadistic and mean-spirited, Tommen was good natured and kind towards his peers.\n\nAlthough originally a mere pawn in the rivalry between his mother and his new wife, Tommen found purpose with the rise of the religious Sparrows. Under the influence of their leader, he attempted to bring about a new age of joint rule between the Crown and the Faith.\n\nAfter witnessing the destruction of the Great Sept of Baelor, learning of the death of his beloved Queen among all the casualties, and seeing his legacy in ruins, Tommen committed suicide by intentionally falling out of an open window in the Red Keep.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tommon-baratheon-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Dean-charles Chapman",
+          "quote": "My father, maybe Joffrey was too much work for him. Sweet Tommen will be so much easier to handle."
         }
-      }
+      },
+      "house_details": "House Baratheon of Storm's End is a legally extinct Great House of Westeros. A cadet branch was formerly the royal house, but House Lannister now controls the throne. House Baratheon traditionally ruled the Stormlands on the eastern coast of Westeros, aptly named for its frequent storms, from their seat of Storm's End.House Baratheon became the royal house of the Seven Kingdoms after Robert Baratheon led a rebellion against the Targaryen dynasty. At the end of the rebellion, Robert ascended the Iron Throne as Robert I and married Cersei Lannister after the death of Lyanna Stark.",
+      "image": "http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/250px-House_Baratheon.svg.png"
     },
-
-
     "House Lannister": {
       "characters": {
         "Cersei Lannister": {
+          "description": "Queen Cersei I Lannister is the widow of King Robert Baratheon and Queen of the Seven Kingdoms. She is the daughter of Lord Tywin Lannister, twin sister of Jaime Lannister and elder sister of Tyrion Lannister. She has an incestuous relationship with Jaime, who is secretly the father of her three children, Joffrey, Myrcella and Tommen.\n\nAfter the assassinations of Joffrey and Myrcella and Tommen's suicide in the wake of the destruction of the Great Sept of Baelor, Cersei assumed the throne under the name of Cersei of the House Lannister, the First of Her Name, Queen of the Andals and the First Men, Protector of the Seven Kingdoms.",
           "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/cersei-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Lena Headey"
+          "real_name": "Lena Headey",
+          "quote": "When you play the game of thrones, you win or you die. There is no middle ground."
         },
         "Jaime Lannister": {
+          "description": "Ser Jaime Lannister is the eldest son of Tywin, younger twin brother of Cersei, and older brother of Tyrion Lannister. He is involved in an incestuous relationship with Cersei, and unknown to most, he is the biological father of her three children, Joffrey, Myrcella, and Tommen.\n\nJaime previously served in the Kingsguard of Aerys Targaryen, known as the Mad King, before infamously backstabbing him during the Sack of King's Landing, earning Jaime the nickname of the Kingslayer. He continued to serve in the Kingsguard of Robert Baratheon, and as Lord Commander for Robert's alleged sons Joffrey and Tommen. However, a confrontation with the Faith of the Seven led to his dismissal from the sworn order.\n\nWith Cersei's ascension to the Iron Throne and in light of the death of their uncle, Ser Kevan Lannister, Jaime was appointed as the new commander of the Lannister armies. However, he left his position to honor and help the North face the White Walkers after he learned that Cersei and Euron Greyjoy plot to dishonor the truce between the Iron Throne and the alliance of House Targaryen and House Stark.",
           "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/jamie-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Nikolaj Coster-Waldau"
-        },
-        "Tyrion Lannister": {
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tyrion-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Peter Dinklage"
-        },
-        "Tywin Lannister": {
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tywin-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Charles Dance"
+          "real_name": "Nikolaj Coster-Waldau",
+          "quote": "There are no men like me. Only me"
         },
         "Lancel Lannister": {
+          "description": "Ser Lancel Lannister is the eldest son of Kevan Lannister and a nephew of Tywin Lannister. He served as a squire for King Robert Baratheon until Robert's death. Soon afterwards, he was elevated to knighthood but sustained an arrow wound during the Battle of the Blackwater that required a prolonged convalescence. During his recovery, he embraced religion and joined the movement known as the Sparrows and abandoned his family name, after which he was simply known as Brother Lancel.",
           "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/lancel-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
-          "real_name": "Eugene Simon"
+          "real_name": "Eugene Simon",
+          "quote": "I'm a different person now. I've found peace in the light of the Seven. You can, too. They watch over all of us, ready to dole out mercy or justice. Their world is at hand."
+        },
+        "Tyrion Lannister": {
+          "description": "Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces.\n\nHis abduction by Catelyn Stark for a crime he did not commit serves as one of the catalysts of the War of the Five Kings. After escaping his captors, Tyrion is appointed by his father as acting Hand of the King to Joffrey Baratheon and successfully defends King's Landing against Stannis Baratheon at the Battle of the Blackwater, after which he is stripped of his power, demoted to Master of Coin and eventually framed for Joffrey's murder. After his champion, Oberyn Martell, dies in Tyrion's trial by combat, Tyrion flees to Essos with help from Jaime and Varys after murdering his father.\n\nIn the east, he is captured by Jorah Mormont and taken to Daenerys Targaryen in Meereen, whom Varys had intended for Tyrion to meet anyway. Daenerys decides to enlist his help in reclaiming the Iron Throne. For his loyalty and service, Tyrion is named as Hand of the Queen to Daenerys before they set sail for Westeros with her new army and allies, ready to advise her when they reach her ancestral home of Dragonstone, where he acts as her strategist during her invasion of Westeros.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tyrion-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Peter Dinklage",
+          "quote": "I'm guilty of a far more monstrous crime: I'm guilty of being a dwarf!"
+        },
+        "Tywin Lannister": {
+          "description": "Lord Tywin Lannister was the head of House Lannister, Lord of Casterly Rock, Warden of the West, Lord Paramount of the Westerlands, Hand of the King for three different kings, and Protector of the Realm. He was the father of Cersei, Jaime, and Tyrion Lannister, and sole grandfather of the incest-born Joffrey, Myrcella, and Tommen Baratheon.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/tywin-lannister-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Charles Dance",
+          "quote": "Before long I'll be dead, and you and your brother and your sister and all of her children, all of us dead, all of us rotting in the ground. It's the family name that lives on. It's all that lives on. Not your personal glory, not your honor... but family."
         }
       },
       "house_deatils": "House Lannister is one of the Great Houses of the Seven Kingdoms and the principal house of the Westerlands. Its seat is at Casterly Rock. Its coat of arms displays a golden lion rampant on a crimson field, and its words are Hear Me Roar! More famous than its official motto is the House's unofficial one: A Lannister always pays his debts. Bastards born in The Westerlands are given the surname Hill. The Lannisters ruled as Kings of the Rock until House Targaryen invaded Westeros. They are the richest family in the Seven Kingdoms because of the gold mines located in their lands.",
       "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
     },
-
-
     "House Stark": {
       "characters": {
-        "Ned Stark": {
-          "real_name": "Sean Bean",
-          "image": "https://cdn.opendemocracy.net/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/557099/123_11.jpg"
-        },
-        "Catelyn Stark": {
-          "real_name": "Michelle Fairley",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/catelyn-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
-        },
-        "Robb Stark": {
-          "real_name": "Richard Madden",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robert-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
-        },
-        "Sansa Stark": {
-          "real_name": "Sophie Turner",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/sansa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
-        },
         "Arya Stark": {
+          "description": "Arya Stark is the third child and second daughter of Lord Eddard Stark and his wife, Lady Catelyn Stark. After narrowly escaping the persecution of House Stark by House Lannister, Arya is trained as a Faceless Man at the House of Black and White in Braavos, and uses her new skills to bring those who have wronged her family to justice.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/arya-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Maisie Williams",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/arya-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
-        },
-        "Bran Stark": {
-          "real_name": "Isaac Hempstead-Wright",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/bran-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
-        },
-        "Rickon Stark": {
-          "real_name": "Art Parkinson",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/rickon-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "A girl is Arya Stark of Winterfell, and I'm going home."
         },
         "Benjen Stark": {
+          "description": "Benjen Stark was the First Ranger of the Night's Watch. He embarks on a ranging north of the Wall, and did not return. He was finally encountered again when he rescued Bran Stark and Meera Reed from wights after they escaped from the cave of the Three-Eyed Raven. Afterwards he led Bran and Meera close to the Wall but stayed behind because he could not pass through it due to his undead status. He eventually sacrificed himself to save his nephew Jon Snow by luring the army of the dead towards him.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/benjen-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Joseph Mawle",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/benjen-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "The Great War is coming, and I still fight for the living. I'll do what I can... as long as I can."
+        },
+        "Bran Stark": {
+          "description": "Brandon Stark, commonly called Bran, is the fourth child and second son of Eddard and Catelyn Stark. Bran is a warg and currently the new Three-Eyed Raven, using his supernatural gifts to assist his family in the war against the White Walkers.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/bran-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Isaac Hempstead-Wright",
+          "quote": "I need to learn to see better. When the Long Night comes again... I need to be ready."
+        },
+        "Catelyn Stark": {
+          "description": "Catelyn Stark, née Tully, was born into House Tully as the daughter of Hoster Tully, the Lord Paramount of the Trident, and sister of Lysa and Edmure Tully. She married into House Stark through her marriage to Eddard Stark, though she was originally intended for Brandon Stark. Together, she and Eddard had five children: Robb, Sansa, Arya, Bran, and Rickon. Catelyn was a devoted mother and was fiercely protective of her children.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/catelyn-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Michelle Fairley",
+          "quote": "Show them how it feels to lose what they love."
+        },
+        "Ned Stark": {
+          "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell, Lord Paramount and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark. He is the father of Robb, Sansa, Arya, Bran and Rickon by his wife, Catelyn Tully, and uncle of Jon Snow, who he raised as his bastard son. He was a dedicated husband and father, a loyal friend and an honorable lord.\n\nEddard's execution and revealing the illegitimacy of Cersei's children was the spark of the War of the Five Kings between Joffrey Baratheon, Robb, Renly Baratheon, Stannis Baratheon and Balon Greyjoy, being posthumously responsible for the involvement of four of the kings in this war.",
+          "image": "https://cdn.opendemocracy.net/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/557099/123_11.jpg",
+          "real_name": "Sean Bean",
+          "quote": "When the snows fall and the white winds blow, the lone wolf dies, but the pack survives."
+        },
+        "Rickon Stark": {
+          "description": "Rickon Stark was the youngest child and third son of Eddard and Catelyn Stark.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/rickon-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Art Parkinson",
+          "quote": "Robb's at war and I'm going beyond the Wall. If something happens to us, you're the heir to Winterfell."
+        },
+        "Robb Stark": {
+          "description": "King Robb Stark was the eldest son of Lord Eddard Stark of Winterfell and his wife, Lady Catelyn. He was the older brother of Sansa, Arya, Bran, and Rickon Stark, and cousin (believed to be half-brother) of Jon Snow. He also adopted a direwolf, whom he named Grey Wind. Robb was declared King in the North, the first since his ancestor Torrhen Stark bent the knee three centuries before, during the War of the Five Kings after the execution of his father by King Joffrey Baratheon.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/robert-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Richard Madden",
+          "quote": "All men should keep their word, kings most of all."
+        },
+        "Sansa Stark": {
+          "description": "Lady Sansa Stark is the eldest daughter of Lord Eddard Stark of Winterfell and his wife Lady Catelyn, sister of Robb, Arya, Bran and Rickon Stark, and 'half-sister' of Jon Snow.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/sansa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
+          "real_name": "Sophie Turner",
+          "quote": "I did what I had to do to survive, my lady. But I am a Stark, I will always be a Stark."
         },
         "Talisa Stark": {
+          "description": "Queen Talisa Stark, née Maegyr, was a healer on the battlefields of the Westerlands, where she met the King in the North, Robb Stark, fell in love with him, eventually married him and became pregnant with their child.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/talisa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Oona Chaplin",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/talisa-stark-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "I decided two things that day. I would not waste my years planning dances and masquerades with the other noble ladies. And when I came of age I would never live in a slave city again."
         }
       },
       "house_details": "House Stark is one of the Great Houses of the Seven Kingdoms and the principal house of the North. Its seat is at Winterfell, one of the oldest castles in the Seven Kingdoms. Its coat of arms displays a grey direwolf running on a white field, and its words are Winter is Coming. House Stark had ruled as the Kings in the North for thousands of years until House Targaryen conquered Westeros, whereafter the Starks are the Lords of Winterfell and Wardens of the North. For prizing honor and devotion to duty, House Stark is the closest of the noble houses to heroism.Over the course of the novels, the Starks are scattered by the War of the Five Kings, and the fate of the House remains uncertain, as most characters believe that all the legitimate Stark sons are dead.",
       "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"
     },
-
-
     "House Targaryen": {
-      "house_deatils": "House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.",
-      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320",
       "characters": {
         "Daenerys Targaryen": {
+          "description": "Queen Daenerys Targaryen, also known as Dany and Daenerys Stormborn, is the younger sister of Rhaegar Targaryen and Viserys Targaryen, the paternal aunt of Jon Snow, and the youngest child of King Aerys II Targaryen and Queen Rhaella Targaryen, who were both ousted from the Iron Throne during Robert Baratheon's rebellion.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/daenarys-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Emilia Clarke",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/daenarys-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "I spent my life in foreign lands. So many men have tried to kill me, I don't remember all their names. I have been sold like a broodmare. I've been chained and betrayed, raped and defiled. Do you know what kept me standing through all those years in exile? Faith. Not in any gods. Not in myths and legends. In myself. In Daenerys Targaryen. The world hadn't seen a dragon in centuries until my children were born. The Dothraki hadn't crossed the sea. Any sea. They did for me. I was born to rule the Seven Kingdoms, and I will."
         },
         "Viserys Targaryen": {
+          "description": "Viserys Targaryen was the younger brother of the late Rhaegar Targaryen, the older brother of Daenerys Targaryen, and the paternal uncle of Jon Snow. Viserys and Daenerys are the remnants of the exiled House Targaryen following Robert's Rebellion against their father Aerys II Targaryen, the Mad King. He claimed the Iron Throne as King Viserys III after his father was overthrown and killed in Robert's Rebellion but never sat on the Iron Throne before being killed by Khal Drogo.",
+          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/viserys-targaryen-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg",
           "real_name": "Harry Lloyd",
-          "image": "https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/viserys-targaryen-1920.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg"
+          "quote": "I want us both to go home, but they took it from us. So tell me, sweet sister, how do we go home? ...We go home with an army."
         }
-      }
+      },
+      "house_deatils": "House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320"
     },
-
-
     "House Tully": {
       "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648"
     }
