@@ -69,8 +69,20 @@ class CharacterDetailsPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: new Column(
                   children: <Widget>[
+                    new Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0),
+                      child: new Text(
+                        charDetailsData["quote"] != null ? '"'+charDetailsData["quote"]+'"' : 'No Data!',
+                        style: new TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.black,
+                            fontFamily: 'Roboto',
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ),
                     new Text(
-                      charDetailsData["description"],
+                      charDetailsData["description"] != null ? charDetailsData["description"] : 'No Data!',
                       style: new TextStyle(
                         fontSize: 16.0, color: Colors.black,
                       ),
