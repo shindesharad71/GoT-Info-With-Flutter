@@ -22,7 +22,6 @@ class HouseListState extends State<HouseList> {
     this.setState(() {
       data = json.decode(response.body);
     });
-//    print(data);
     return "Success!";
   }
 

@@ -19,7 +19,6 @@ class CharacterList extends StatelessWidget {
   Widget build(BuildContext context) {
     Map charData = data;
     charData = data[_houseName]["characters"];
-//    print(charData);
     return new Scaffold(
 //        appBar: new AppBar(title: new Text(_houseName),),
         body: new Column(
@@ -132,7 +131,6 @@ class CharacterListPageState extends State<CharacterListPage> {
     if (charData == null) {
       return new LoadingPage();
     } else {
-      print(charData.keys.toList());
       return new Flexible(
           child: new Column(
             children: <Widget>[

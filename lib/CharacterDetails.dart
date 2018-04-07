@@ -75,7 +75,6 @@ class CharacterDetailsPage extends StatelessWidget {
                         fontSize: 16.0, color: Colors.black,
                       ),
                     ),
-                    new Text("fgyhuijojhucfcgbhjnkljhbgfvcvbhjkml;kjbhcgfbhjnk")
                   ],
                 ),
               ),
