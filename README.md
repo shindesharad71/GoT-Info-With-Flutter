@@ -2,7 +2,7 @@
 
 A new Flutter project. A basic informative app for the HBO Series Game of Thrones.
 
-[:dragon_face: Get APK From Here](https://github.com/shindesharad71/GoT-Info-With-Flutter/blob/master/apk/GOT.apk)
+### [:wolf: Get APK From Here](https://github.com/shindesharad71/GoT-Info-With-Flutter/releases/download/v1.0/GOT.apk)
 
 ### Demo
 
