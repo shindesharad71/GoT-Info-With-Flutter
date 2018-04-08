@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.layouts"
+        applicationId "com.yourcompany.got_flutter"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1

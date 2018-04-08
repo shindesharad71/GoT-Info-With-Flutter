@@ -382,7 +382,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.layouts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.got_flutter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -404,7 +404,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.layouts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.got_flutter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
